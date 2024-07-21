@@ -1388,6 +1388,35 @@ textarea.form-input::-webkit-resizer { display: none; }
   .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
+/* Gallery */
+.gallery {
+  margin-top: 20px;
+}
+
+.gallery-title {
+  margin-bottom: 15px;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 50px;
+  margin: 0 -30px;
+  padding: 45px;
+  overflow-x: auto;
+  scroll-padding-inline: 45px;
+  white-space: nowrap;
+}
+
+.gallery-item {
+  min-width: calc(33.33% - 35px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
   /* service */
 
