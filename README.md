@@ -1,44 +1,20 @@
-# vCard - Personal portfolio
+# Yunting Zhao's Portfolio Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Welcome to my portfolio website! This site showcases my work, creativity, and experiences in the fields of creative design. I have recently reorganized my website to provide a better user experience and to include new sections for a personal blog and a creative site.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+### Features
 
-## Demo
+- **Project Demos**: Explore interactive demos and prototypes that highlight my skills in interaction design and development.
+- **Fun Blog**: I share my thoughts, experiences, and insights on various topics, including technology, design, and personal growth. (Most topics are related to game development and XR.)
+- **Gallery**: A visual gallery of my artwork, including watercolor paintings and digital creations.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## Acknowledgements
 
-## Prerequisites
+I used the [vCard - Personal Portfolio](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio) as my base template. This provided a solid foundation upon which I built my unique customizations and features.
 
-Before you begin, ensure you have met the following requirements:
+## Technologies Used
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-MIT
+- **HTML/CSS**: For structuring and styling the website.
+- **JavaScript**: For interactive elements and dynamic content.
+- **Bootstrap**: For responsive design and layout.
+- **Photoshop**: For icons and visual enhancements.
