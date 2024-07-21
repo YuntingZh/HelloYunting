@@ -3,7 +3,7 @@
 Welcome to [my portfolio website](https://yuntingzh.github.io/HelloYunting/)! This site showcases my work, creativity, and experiences in the fields of creative design. I have recently reorganized my website to provide a better user experience and to include new sections for a personal blog and a creative site.
 <p align="center">
   <a href="https://yuntingzh.github.io/HelloYunting/">
-    <img src="./assets/AboutMe/btn_view_website" width="60" alt="View Website">
+    <img src="./assets/AboutMe/btn_view_website.png" width="100" alt="View Website">
   </a>
 </p>
 
