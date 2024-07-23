@@ -64,7 +64,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(309, 100%, 72%);
-  --vegas-gold: hsl(296, 54%, 58%);
+  --fluorescent-pink : hsl(296, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -446,8 +446,10 @@ main {
 
 .social-item .social-link:hover { color: var(--light-gray); }
 
-
-
+.large-icon {
+  color: var(--fluorescent-pink);
+  font-size: 3em; 
+}
 
 
 /*-----------------------------------*\
@@ -796,7 +798,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--fluorescent-pink );
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -2095,6 +2097,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Tools Section */
 .tools {
+  margin-top: 35px;
   margin-bottom: 35px;
 }
 
