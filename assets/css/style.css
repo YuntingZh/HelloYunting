@@ -956,7 +956,8 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
+  height: auto;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1000,10 +1001,17 @@ main {
 
 .project-item-icon-box ion-icon { --ionicon-stroke-width: 50px; }
 
-.project-img img {
+/* .project-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: var(--transition-1);
+} */
+.project-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%; /* Ensure images don't exceed their container */
   transition: var(--transition-1);
 }
 
@@ -2137,6 +2145,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .tools-item-title {
+  height: 2.5em; 
+  display: flex;
   margin-bottom: 7px;
   color: var(--white-2);
   font-size: var(--fs-6);
