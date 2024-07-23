@@ -1994,7 +1994,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
-/* Gallery */
+/* Gallery - life at a glance */
 .gallery {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2096,7 +2096,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Tools Section */
 .tools {
   margin-bottom: 35px;
-  text-align: center; /* Center-align the section content */
 }
 
 .tools-title {
