@@ -3,87 +3,61 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-// Store Project Data in JavaScript
-const projects = [
-  {
-    category: "Design Engineering|Product Design",
-    imgSrc: "./assets/images/projects/op_heart_sync.png",
-    imgAlt: "HeartSync",
-    title: "HeartSync",
-    categoryText: "Design Engineering, Product Design",
-    description: "Detailed description of HeartSync project.",
-    additionalImages: [
-      "./assets/images/projects/heart_sync_1.png",
-      "./assets/images/projects/heart_sync_2.png"
-    ]
-  },
-  {
-    category: "Design Engineering",
-    imgSrc: "./assets/images/projects/op_NASAsuits.png",
-    imgAlt: "NASA Suits",
-    title: "EECS | NASA Suits Design Challenge",
-    categoryText: "Design Engineering, Product Design",
-    description: "Detailed description of NASA Suits Design Challenge project.",
-    additionalImages: [
-      "./assets/images/projects/nasa_suits_1.png",
-      "./assets/images/projects/nasa_suits_2.png"
-    ]
-  },
-  // Add more projects here...
-];
-
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', (event) => {
-  // Generate HTML Dynamically
-  const projectList = document.querySelector('.project-list');
+  // Fetch project data from JSON file
+  fetch('./assets/data/projects.json')
+    .then(response => response.json())
+    .then(projects => {
+      const projectList = document.querySelector('.project-list');
 
-  projects.forEach(project => {
-    const projectItem = document.createElement('li');
-    projectItem.className = 'project-item active';
-    projectItem.setAttribute('data-filter-item', '');
-    projectItem.setAttribute('data-category', project.category);
+      projects.forEach(project => {
+        const projectItem = document.createElement('li');
+        projectItem.className = 'project-item active';
+        projectItem.setAttribute('data-filter-item', '');
+        projectItem.setAttribute('data-category', project.category);
 
-    projectItem.innerHTML = `
-      <a href="#" class="project-link">
-        <figure class="project-img">
-          <div class="project-item-icon-box">
-            <ion-icon name="eye-outline"></ion-icon>
-          </div>
-          <img src="${project.imgSrc}" alt="${project.imgAlt}" loading="lazy">
-        </figure>
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-category">${project.categoryText}</p>
-      </a>
-    `;
+        projectItem.innerHTML = `
+          <a href="#" class="project-link">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="${project.imgSrc}" alt="${project.imgAlt}" loading="lazy">
+            </figure>
+            <h3 class="project-title">${project.title}</h3>
+            <p class="project-category">${project.categoryText}</p>
+          </a>
+        `;
 
-    projectList.appendChild(projectItem);
-  });
-
-  // Add click event listener for pop-up functionality
-  const projectLinks = document.querySelectorAll('.project-link');
-
-  projectLinks.forEach((link, index) => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-
-      const project = projects[index];
-      
-      modalImg.src = project.imgSrc;
-      modalImg.alt = project.imgAlt;
-      modalTitle.innerText = project.title;
-      modalText.innerText = project.description;
-
-      const additionalImagesContainer = document.querySelector('.modal-additional-images');
-      additionalImagesContainer.innerHTML = '';
-      project.additionalImages.forEach(image => {
-        const imgElement = document.createElement('img');
-        imgElement.src = image;
-        additionalImagesContainer.appendChild(imgElement);
+        projectList.appendChild(projectItem);
       });
-      
-      testimonialsModalFunc(); // Show the modal
+
+      // Add click event listener for pop-up functionality
+      const projectLinks = document.querySelectorAll('.project-link');
+
+      projectLinks.forEach((link, index) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+
+          const project = projects[index];
+          
+          modalImg.src = project.imgSrc;
+          modalImg.alt = project.imgAlt;
+          modalTitle.innerText = project.title;
+          modalText.innerText = project.description;
+
+          const additionalImagesContainer = document.querySelector('.modal-additional-images');
+          additionalImagesContainer.innerHTML = '';
+          project.additionalImages.forEach(image => {
+            const imgElement = document.createElement('img');
+            imgElement.src = image;
+            additionalImagesContainer.appendChild(imgElement);
+          });
+          
+          testimonialsModalFunc(); // Show the modal
+        });
+      });
     });
-  });
 
   // Existing code
   const sidebar = document.querySelector("[data-sidebar]");
