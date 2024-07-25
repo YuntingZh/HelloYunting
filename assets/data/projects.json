@@ -4,12 +4,11 @@
       "imgSrc": "./assets/images/projects/op_heart_sync.png",
       "imgAlt": "HeartSync",
       "title": "HeartSync",
-      "categoryText": "Design Engineering, Product Design",
-      "description": "Detailed description of HeartSync project.",
-      "date": "2024-06-14", 
+      "categoryText": "Emotion-Driven Heartbeat Monitor",
+      "description": "HeartSync is an innovative project designed to externalize emotions using a heartbeat monitoring device. Inspired by an old clock, this device integrates a MAX30102 sensor for accurate heart rate monitoring, an ESP32 microcontroller for data processing, and a servo motor to display heart rate information on the clock face. By visualizing the heartbeat, HeartSync enhances self-understanding and interpersonal connections. This project merges creative design with physical computing to create a unique emotional interface.",
+      "date": "2024-02-05", 
       "additionalImages": [
-        "./assets/images/projects/heart_sync_1.png",
-        "./assets/images/projects/heart_sync_2.png"
+        "./assets/images/projects/HeartSync_20gif.gif"
       ]
     },
     {
@@ -17,7 +16,7 @@
         "imgSrc": "./assets/images/projects/op_NASAsuits.png",
         "imgAlt": "NASA Suits",
         "title": "NASA SUITS DESIGN CHALLENGE",
-        "categoryText": "Design Engineering, Product Design",
+        "categoryText": "Design Engineering",
         "description": "This project focused on developing an all-in-one AR interface for NASA astronauts. Our innovative design, created in collaboration with UC Berkeley and Baylor University, ensures critical information is non-intrusive and always visible. Using voice commands powered by a language model (LLM), astronauts can operate hands-free. Additionally, the interface includes a rover tracking feature to control Leo rovers. By integrating robot digital twin datasets, our team significantly contributed to space exploration technology. Fun fact: We often shouted 'Hello Bear!' during tests.",
         "date": "2024-06-14", 
         "additionalImages": [
@@ -30,11 +29,10 @@
       "imgAlt": "AR Activation",
       "title": "AR Activation",
       "categoryText": "Design Engineering",
-      "description": "Detailed description of AR Activation project.",
+      "description": "To Be Updated Soon",
       "date": "2024-06-14", 
       "additionalImages": [
-        "./assets/images/projects/ar_activation_1.png",
-        "./assets/images/projects/ar_activation_2.png"
+ 
       ]
     },
     {
@@ -43,11 +41,9 @@
       "imgAlt": "Laser Chimes",
       "title": "Laser Chimes",
       "categoryText": "Design Engineering",
-      "description": "Detailed description of Laser Chimes project.",
+      "description": "To Be Updated Soon",
       "date": "2024-06-14", 
       "additionalImages": [
-        "./assets/images/projects/laser_chimes_1.png",
-        "./assets/images/projects/laser_chimes_2.png"
       ]
     },
     {
@@ -56,11 +52,10 @@
       "imgAlt": "Design and Fabrication",
       "title": "Design and Fabrication",
       "categoryText": "Design Engineering",
-      "description": "Detailed description of Design and Fabrication project.",
+      "description": "Outside of my digital design work, I also enjoy fabrication projects.",
       "date": "2024-06-14", 
       "additionalImages": [
-        "./assets/images/projects/design_fabrication_1.png",
-        "./assets/images/projects/design_fabrication_2.png"
+        "./assets/images/projects/Fabrication_metalwork.gif"
       ]
     },
     {
@@ -69,11 +64,10 @@
       "imgAlt": "ShiftPixy Animation + Game",
       "title": "ShiftPixy Animation + Game",
       "categoryText": "Product Design",
-      "description": "Detailed description of ShiftPixy Animation + Game project.",
+      "description": "To Be Updated Soon",
       "date": "2024-06-14", 
       "additionalImages": [
-        "./assets/images/projects/shiftpixy_game_1.png",
-        "./assets/images/projects/shiftpixy_game_2.png"
+        
       ]
     },
     {
@@ -82,24 +76,22 @@
       "imgAlt": "SunWater Plus",
       "title": "SunWater Plus",
       "categoryText": "Product Design",
-      "description": "Detailed description of SunWater Plus project.",
+      "description": "SunWater Plus is a sustainable water filtration system designed to harness solar energy for water purification. By integrating solar panels and advanced filtration technology, it provides clean drinking water efficiently and eco-consciously. The system includes an AR feature for easy panel installation and filter replacement, ensuring optimal performance and user convenience. SunWater Plus aims to address water scarcity and promote sustainable living by leveraging renewable energy sources and innovative design.",
       "date": "2024-06-14", 
       "additionalImages": [
-        "./assets/images/projects/sunwater_plus_1.png",
-        "./assets/images/projects/sunwater_plus_2.png"
+     
       ]
     },
     {
       "category": "Product Design",
       "imgSrc": "./assets/images/projects/op_AI_chatbot.png",
       "imgAlt": "AI Chatbot (Medidish)",
-      "title": "AI Chatbot (Medidish)",
-      "categoryText": "Product Design",
-      "description": "Detailed description of AI Chatbot (Medidish) project.",
-      "date": "2024-06-14", 
+      "title": "Medidish (AI Chatbot)",
+      "categoryText": "AI-driven Chinese Medicinal Diet Guide ",
+      "description": "MediDish is an AI-driven Chinese Medicinal Diet Guide designed to revolutionize wellness. This project aims to bridge the gap between Traditional Chinese Medicine (TCM) and modern dietary needs by providing users with personalized medicinal recipes. Leveraging a large language model (LLM), MediDish offers a database of Chinese medicinal cuisine, dietary herbal medicine, and nutrition therapy. The user interface, inspired by traditional Chinese medicine cabinets, organizes and presents this information in a user-friendly manner, promoting the practical application of TCM in daily life.",
+      "date": "2023-11-14", 
       "additionalImages": [
-        "./assets/images/projects/ai_chatbot_1.png",
-        "./assets/images/projects/ai_chatbot_2.png"
+        "./assets/images/projects/MediDish_AI_chatbot.png"
       ]
     },
     {
@@ -108,11 +100,9 @@
       "imgAlt": "ShareWagon + OMT for Community Design",
       "title": "ShareWagon + OMT for Community Design",
       "categoryText": "Product Design",
-      "description": "Detailed description of ShareWagon + OMT for Community Design project.",
+      "description": "To Be Updated Soon",
       "date": "2024-06-14", 
       "additionalImages": [
-        "./assets/images/projects/sharewagon_1.png",
-        "./assets/images/projects/sharewagon_2.png"
       ]
     }
   ]
