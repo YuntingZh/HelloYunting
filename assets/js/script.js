@@ -32,6 +32,31 @@ document.addEventListener('DOMContentLoaded', (event) => {
         projectList.appendChild(projectItem);
       });
 
+      // Re-initialize filtering functionality after projects are added
+      const filterBtn = document.querySelectorAll('[data-filter-btn]');
+      const filterItems = document.querySelectorAll('[data-filter-item]');
+
+      const filterFunc = (selectedValue) => {
+        selectedValue = selectedValue.toLowerCase();
+        filterItems.forEach(item => {
+          const itemCategories = item.dataset.category.toLowerCase().split('|');
+          if (selectedValue === 'all' || itemCategories.includes(selectedValue)) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      };
+
+      filterBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtn.forEach(button => button.classList.remove('active'));
+          btn.classList.add('active');
+          const selectedValue = btn.innerText.toLowerCase();
+          filterFunc(selectedValue);
+        });
+      });
+
       // Add click event listener for pop-up functionality
       const projectLinks = document.querySelectorAll('.project-link');
 
@@ -41,12 +66,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
           const project = projects[index];
           
+          const modalImg = document.querySelector('[data-modal-img]');
           modalImg.src = project.imgSrc;
           modalImg.alt = project.imgAlt;
+
+          const modalTitle = document.querySelector('[data-modal-title]');
           modalTitle.innerText = project.title;
+
+          const modalText = document.querySelector('[data-modal-text]');
           modalText.innerText = project.description;
-          // add Date of the proj
-          const modalDate = document.querySelector('.modal-content time');
+
+          const modalDate = document.querySelector('[data-modal-date]');
           modalDate.innerText = new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
           modalDate.setAttribute('datetime', project.date);
 
@@ -63,11 +93,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     });
 
-  // Existing code
   const sidebar = document.querySelector("[data-sidebar]");
   const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-  // sidebar toggle functionality for mobile
   sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
   const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
@@ -75,12 +103,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
   const overlay = document.querySelector("[data-overlay]");
 
-  // modal variable
   const modalImg = document.querySelector("[data-modal-img]");
   const modalTitle = document.querySelector("[data-modal-title]");
   const modalText = document.querySelector("[data-modal-text]");
 
-  // modal toggle function
   const testimonialsModalFunc = function () {
     if (modalContainer && overlay) {
       modalContainer.classList.toggle("active");
@@ -88,7 +114,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   }
 
-  // add click event to all modal items
   if (testimonialsItem && modalContainer && modalCloseBtn && overlay) {
     for (let i = 0; i < testimonialsItem.length; i++) {
       testimonialsItem[i].addEventListener("click", function () {
@@ -100,7 +125,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     }
 
-    // add click event to modal close button
     modalCloseBtn.addEventListener("click", testimonialsModalFunc);
     overlay.addEventListener("click", testimonialsModalFunc);
   }
@@ -114,7 +138,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     select.addEventListener("click", function () { elementToggleFunc(this); });
   }
 
-  // add event in all select items
   if (selectItems) {
     for (let i = 0; i < selectItems.length; i++) {
       selectItems[i].addEventListener("click", function () {
@@ -129,7 +152,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const filterItems = document.querySelectorAll("[data-filter-item]");
 
   const filterFunc = function (selectedValue) {
-    selectedValue = selectedValue.toLowerCase(); // Ensure selected value is lowercase
+    selectedValue = selectedValue.toLowerCase();
     for (let i = 0; i < filterItems.length; i++) {
       const itemCategories = filterItems[i].dataset.category.toLowerCase().split('|');
       if (selectedValue === "all" || itemCategories.includes(selectedValue)) {
@@ -140,7 +163,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   }
 
-  // add event in all filter button items for large screen
   let lastClickedBtn = filterBtn[0];
 
   if (filterBtn) {
@@ -160,11 +182,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const formInputs = document.querySelectorAll("[data-form-input]");
   const formBtn = document.querySelector("[data-form-btn]");
 
-  // add event to all form input field
   if (formInputs && form) {
     for (let i = 0; i < formInputs.length; i++) {
       formInputs[i].addEventListener("input", function () {
-        // check form validation
         if (form.checkValidity()) {
           formBtn.removeAttribute("disabled");
         } else {
@@ -177,7 +197,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const navigationLinks = document.querySelectorAll("[data-nav-link]");
   const pages = document.querySelectorAll("[data-page]");
 
-  // add event to all nav link
   if (navigationLinks && pages) {
     for (let i = 0; i < navigationLinks.length; i++) {
       navigationLinks[i].addEventListener("click", function () {
