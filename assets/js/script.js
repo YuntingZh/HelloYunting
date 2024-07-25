@@ -45,6 +45,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
           modalImg.alt = project.imgAlt;
           modalTitle.innerText = project.title;
           modalText.innerText = project.description;
+          // add Date of the proj
+          const modalDate = document.querySelector('.modal-content time');
+          modalDate.innerText = new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+          modalDate.setAttribute('datetime', project.date);
 
           const additionalImagesContainer = document.querySelector('.modal-additional-images');
           additionalImagesContainer.innerHTML = '';

@@ -6,23 +6,24 @@
       "title": "HeartSync",
       "categoryText": "Design Engineering, Product Design",
       "description": "Detailed description of HeartSync project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/heart_sync_1.png",
         "./assets/images/projects/heart_sync_2.png"
       ]
     },
     {
-      "category": "Design Engineering",
-      "imgSrc": "./assets/images/projects/op_NASAsuits.png",
-      "imgAlt": "NASA Suits",
-      "title": "EECS | NASA Suits Design Challenge",
-      "categoryText": "Design Engineering, Product Design",
-      "description": "Detailed description of NASA Suits Design Challenge project.",
-      "additionalImages": [
-        "./assets/images/projects/nasa_suits_1.png",
-        "./assets/images/projects/nasa_suits_2.png"
-      ]
-    },
+        "category": "Design Engineering",
+        "imgSrc": "./assets/images/projects/op_NASAsuits.png",
+        "imgAlt": "NASA Suits",
+        "title": "NASA SUITS DESIGN CHALLENGE",
+        "categoryText": "Design Engineering, Product Design",
+        "description": "This project focused on developing an all-in-one AR interface for NASA astronauts. Our innovative design, created in collaboration with UC Berkeley and Baylor University, ensures critical information is non-intrusive and always visible. Using voice commands powered by a language model (LLM), astronauts can operate hands-free. Additionally, the interface includes a rover tracking feature to control Leo rovers. By integrating robot digital twin datasets, our team significantly contributed to space exploration technology. Fun fact: We often shouted 'Hello Bear!' during tests.",
+        "date": "2024-06-14", 
+        "additionalImages": [
+          "./assets/images/projects/NASAsuits_LLM.png"
+        ]
+      },
     {
       "category": "Design Engineering|Product Design",
       "imgSrc": "./assets/images/projects/ShiftPixy/op_AR_activation.png",
@@ -30,6 +31,7 @@
       "title": "AR Activation",
       "categoryText": "Design Engineering",
       "description": "Detailed description of AR Activation project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/ar_activation_1.png",
         "./assets/images/projects/ar_activation_2.png"
@@ -42,6 +44,7 @@
       "title": "Laser Chimes",
       "categoryText": "Design Engineering",
       "description": "Detailed description of Laser Chimes project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/laser_chimes_1.png",
         "./assets/images/projects/laser_chimes_2.png"
@@ -54,6 +57,7 @@
       "title": "Design and Fabrication",
       "categoryText": "Design Engineering",
       "description": "Detailed description of Design and Fabrication project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/design_fabrication_1.png",
         "./assets/images/projects/design_fabrication_2.png"
@@ -66,6 +70,7 @@
       "title": "ShiftPixy Animation + Game",
       "categoryText": "Product Design",
       "description": "Detailed description of ShiftPixy Animation + Game project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/shiftpixy_game_1.png",
         "./assets/images/projects/shiftpixy_game_2.png"
@@ -78,6 +83,7 @@
       "title": "SunWater Plus",
       "categoryText": "Product Design",
       "description": "Detailed description of SunWater Plus project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/sunwater_plus_1.png",
         "./assets/images/projects/sunwater_plus_2.png"
@@ -90,6 +96,7 @@
       "title": "AI Chatbot (Medidish)",
       "categoryText": "Product Design",
       "description": "Detailed description of AI Chatbot (Medidish) project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/ai_chatbot_1.png",
         "./assets/images/projects/ai_chatbot_2.png"
@@ -102,6 +109,7 @@
       "title": "ShareWagon + OMT for Community Design",
       "categoryText": "Product Design",
       "description": "Detailed description of ShareWagon + OMT for Community Design project.",
+      "date": "2024-06-14", 
       "additionalImages": [
         "./assets/images/projects/sharewagon_1.png",
         "./assets/images/projects/sharewagon_2.png"

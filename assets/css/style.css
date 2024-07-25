@@ -617,8 +617,38 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* this is for the profolio text  */
+[data-modal-text] {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  /* Remove line-clamping and overflow hidden */
+  display: block;
+  -webkit-box-orient: unset;
+  overflow: visible;
 
+}
+/* This is for.modal-additional-images inside pop-up */
+.modal-additional-images {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
 
+.modal-additional-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex: 1 1 calc(50% - 10px); /* Adjust based on how many images you want per row */
+}
 /**
  * #testimonials-modal
  */
