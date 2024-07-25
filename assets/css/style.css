@@ -447,10 +447,19 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 .large-icon {
+  text-align: center;
   color: var(--fluorescent-pink);
   font-size: 3em; 
 }
-
+/* Add this media query to center the icon on smaller screens */
+@media (max-width: 768px) {
+  .large-icon {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+  }
+}
 
 /*-----------------------------------*\
   #NAVBAR
