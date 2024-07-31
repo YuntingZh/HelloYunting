@@ -8,7 +8,7 @@
       "description": "HeartSync is an innovative project designed to externalize emotions using a heartbeat monitoring device. Inspired by an old clock, this device integrates a MAX30102 sensor for accurate heart rate monitoring, an ESP32 microcontroller for data processing, and a servo motor to display heart rate information on the clock face. By visualizing the heartbeat, HeartSync enhances self-understanding and interpersonal connections. This project merges creative design with physical computing to create a unique emotional interface.",
       "date": "2024-02-05", 
       "additionalImages": [
-        "./assets/images/projects/HeartSync_20gif.gif"
+        "./assets/images/projects/20sGif_Product_demo_withCap.gif"
       ]
     },
     {
