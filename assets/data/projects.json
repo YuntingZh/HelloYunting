@@ -24,7 +24,7 @@
         ]
       },
     {
-      "category": "Design Engineering|Product Design",
+      "category": "Design Engineering",
       "imgSrc": "./assets/images/projects/ShiftPixy/op_AR_activation.png",
       "imgAlt": "AR Activation Project at ShiftPixy",
       "title": "AR Activation",
@@ -38,13 +38,16 @@
     },
     {
       "category": "Design Engineering",
-      "imgSrc": "./assets/images/projects/op_windchime.png",
-      "imgAlt": "Laser Chimes",
-      "title": "Laser Chimes",
-      "categoryText": "Design Engineering",
-      "description": "To Be Updated Soon",
-      "date": "2024-06-14", 
+      "imgSrc": "./assets/images/projects/Innovative_design/VR_O.png",
+      "imgAlt": "XR Ophthalmoscopy Simulator",
+      "title": "XR Ophthalmoscopy Simulator",
+      "categoryText": "AR + VR solution for eductaion",
+      "description": "The XR Ophthalmoscopy Simulator is part of a research collaboration with the IDSC and Bascom Palmer Eye Institute. This VR tool is designed to help medical students practice eye examinations, offering an immersive, risk-free learning environment with realistic 3D eye models and varied scenarios to enhance diagnostic skills.",
+      "date": "2022-05-14", 
       "additionalImages": [
+        "./assets/images/projects/Innovative_design/VR_O_demo.gif",
+        "./assets/images/projects/Innovative_design/bason-palmer-eye-institute.png"
+
       ]
     },
     {
@@ -98,15 +101,32 @@
       ]
     },
     {
-      "category": "Product Design",
-      "imgSrc": "./assets/images/projects/op_ShareWagon.png",
-      "imgAlt": "ShareWagon + OMT for Community Design",
-      "title": "ShareWagon + OMT for Community Design",
-      "categoryText": "Product Design",
-      "description": "To Be Updated Soon",
-      "date": "2024-06-14", 
+      "category": "Design Engineering",
+      "imgSrc": "./assets/images/projects/Innovative_design/op_MR_boba.png",
+      "imgAlt": "Mix reality - Boba Making Experience",
+      "title": "Mix reality - Boba Making Experience",
+      "categoryText": "Innonative design with Mix Reality",
+      "description": "In November 2023, I dove into an exciting hackathon at Stanford! Our team took on the challenge of creating a mixed reality experience centered around everyone's favorite treat—boba tea. Using Unity 2022.3.12f1 and the Quest 3, we brought the joy of boba-making to life. Users can create their digital twin of the cup, and their recipe would automatically adjust based on the cup's volume. Let's have fun and one virtual tapioca pearl at a time!",
+      "date": "2023-11-10", 
       "additionalImages": [
+        "./assets/images/projects/Innovative_design/MR_boba_demo.gif",
+        "./assets/images/projects/Innovative_design/MR_boba_testing.gif"
+      ]
+    },
+    {
+      "category": "Technical Art",
+      "imgSrc": "./assets/images/projects/TechnicalArt/op_PP.png",
+      "imgAlt": "Unreal | CG",
+      "title": "Unreal Niagara system - liquid simulation",
+      "categoryText": "Unreal Game Engine",
+      "description": "This is a project aims to explore the complex interactions between water and wind, focusing on how these dynamics influence and collide with objects (a sea monster and a boat) in a sea environment. I also designed the models, handled shading, and mapped the textures.",
+      "date": "2024-4-10", 
+      "additionalImages": [
+        "./assets/images/projects/TechnicalArt/PP_1.png",
+        "./assets/images/projects/TechnicalArt/PP_2.png",
+        "./assets/images/projects/TechnicalArt/PP_3.png"
       ]
     }
+    
   ]
   
