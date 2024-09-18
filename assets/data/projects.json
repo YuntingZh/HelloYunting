@@ -13,14 +13,18 @@
     },
     {
         "category": "Design Engineering",
-        "imgSrc": "./assets/images/projects/op_NASAsuits.png",
+        "imgSrc": "./assets/images/projects/XR/op_NASAsuits.png",
         "imgAlt": "NASA Suits",
         "title": "NASA SUITS DESIGN CHALLENGE",
         "categoryText": "Design Engineering",
         "description": "This project focused on developing an all-in-one AR interface for NASA astronauts. Our innovative design, created in collaboration with UC Berkeley and Baylor University, ensures critical information is non-intrusive and always visible. Using voice commands powered by a language model (LLM), astronauts can operate hands-free. Additionally, the interface includes a rover tracking feature to control Leo rovers. By integrating robot digital twin datasets, our team significantly contributed to space exploration technology. Fun fact: We often shouted 'Hello Bear!' during tests.",
         "date": "2024-06-14", 
         "additionalImages": [
-          "./assets/images/projects/NASAsuits_LLM.png"
+          "./assets/images/projects/XR/NASAsuits_teamPre.gif",
+          "./assets/images/projects/XR/NASAsuits_LLM.png",
+          "./assets/images/projects/XR/NASAsuits_team.png",
+          "assets/images/projects/XR/NASAsuits_onsite.png",
+          "./assets/images/projects/XR/NASAsuits_workingMe.gif"
         ]
       },
     {
