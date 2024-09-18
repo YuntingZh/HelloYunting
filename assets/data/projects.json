@@ -119,12 +119,12 @@
     },
     {
       "category": "Design Engineering",
-      "imgSrc": "./assets/images/projects/Innovative_design/VR_O.png",
-      "imgAlt": "XR Ophthalmoscopy Simulator",
-      "title": "XR Ophthalmoscopy Simulator",
-      "categoryText": "AR + VR solution for eductaion",
-      "description": "The XR Ophthalmoscopy Simulator is part of a research collaboration with the IDSC and Bascom Palmer Eye Institute. This VR tool is designed to help medical students practice eye examinations, offering an immersive, risk-free learning environment with realistic 3D eye models and varied scenarios to enhance diagnostic skills.",
-      "date": "2022-05-14", 
+      "imgSrc": "./assets/images/projects/XR/op_PuzzleNow.png",
+      "imgAlt": "Puzzle Now",
+      "title": "Puzzle Now",
+      "categoryText": "Apple Vision Pro Puzzle Game",
+      "description": "This project was an extension of a hackathon, where I worked in a team of three to create a fun puzzle game for the Apple Vision Pro upon its release. 'Puzzle Now' offers an immersive puzzle experience, allowing users to interact with puzzle pieces in a spatial environment. With varying difficulty levels and automatic clustering of pieces, the game provides both challenge and entertainment, enhanced by interactive sound and feedback. Now available on the Apple Store.",
+      "date": "2024-03-12", 
       "additionalImages": [
         "./assets/images/projects/XR/PuzzleNow_app.png",
         "./assets/images/projects/XR/PuzzleNow_demo.gif"
