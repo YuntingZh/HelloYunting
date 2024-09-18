@@ -48,7 +48,7 @@
     hsl(0, 0%, 25%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
-  --text-gradient-yellow: linear-gradient(
+  --text-gradient-pinky: linear-gradient(
     to right, 
     hsl(311, 100%, 72%), 
     hsl(317, 77%, 54%)
@@ -251,7 +251,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-pinky);
   border-radius: 3px;
 }
 
@@ -516,6 +516,13 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
+
+.text-gradient {
+  background: var(--text-gradient-pinky);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 
 
@@ -859,7 +866,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-pinky);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -903,7 +910,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-pinky);
   height: 100%;
   border-radius: inherit;
 }
