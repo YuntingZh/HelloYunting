@@ -118,6 +118,20 @@
       ]
     },
     {
+      "category": "Design Engineering",
+      "imgSrc": "./assets/images/projects/Innovative_design/VR_O.png",
+      "imgAlt": "XR Ophthalmoscopy Simulator",
+      "title": "XR Ophthalmoscopy Simulator",
+      "categoryText": "AR + VR solution for eductaion",
+      "description": "The XR Ophthalmoscopy Simulator is part of a research collaboration with the IDSC and Bascom Palmer Eye Institute. This VR tool is designed to help medical students practice eye examinations, offering an immersive, risk-free learning environment with realistic 3D eye models and varied scenarios to enhance diagnostic skills.",
+      "date": "2022-05-14", 
+      "additionalImages": [
+        "./assets/images/projects/XR/PuzzleNow_app.png",
+        "./assets/images/projects/XR/PuzzleNow_demo.gif"
+  
+      ]
+    },
+    {
       "category": "Technical Art",
       "imgSrc": "./assets/images/projects/TechnicalArt/op_PP.png",
       "imgAlt": "Unreal | CG",
