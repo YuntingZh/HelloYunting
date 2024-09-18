@@ -40,7 +40,7 @@
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(318, 100%, 71%, 0.251) 0%, 
+    hsla(318, 100%, 62%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -522,8 +522,21 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* about me  - recent proj img session, i just added */
+.recent-project-image-wrapper {
+  text-align: center; /* Centers content within the container */
+}
 
+.recent-project-image {
+  width: 50%; /* Makes the image half the width of its container */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
 
+.recent-project-caption {
+  margin-top: 10px; /* Adds some space between the image and the caption */
+  color: white; /* Optional: Adjust text color if needed */
+}
 
 
 /**
