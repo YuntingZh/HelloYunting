@@ -526,9 +526,15 @@ main {
 .recent-project-image-wrapper {
   text-align: center; /* Centers content within the container */
 }
+/* about me  - video*/
+.about-me-gif {
+  width: 90%;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
 
 .recent-project-image {
-  width: 50%; /* Makes the image half the width of its container */
+  width: 35%; /* Makes the image half the width of its container */
   display: block;
   margin: 0 auto; /* Centers the image */
 }
