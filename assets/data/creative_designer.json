@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Project Title Here",
+        "short_description": "Short description about the project here.",
+        "detailed_description": "Detailed information about the project goes here.",
+        "images": [
+            {
+                "src": "./assets/images/projects/example1.png",
+                "alt": "Description of image 1",
+                "caption": "Caption for image 1"
+            },
+            {
+                "src": "./assets/images/projects/example2.png",
+                "alt": "Description of image 2",
+                "caption": "Caption for image 2"
+            }
+        ]
+    },
+    {
+        "title": "Another Project Title",
+        "short_description": "Short description about this project.",
+        "detailed_description": "More details about this project go here.",
+        "images": [
+            {
+                "src": "./assets/images/projects/example3.png",
+                "alt": "Description of image 3",
+                "caption": "Caption for image 3"
+            }
+        ]
+    }
+]

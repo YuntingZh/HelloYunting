@@ -305,6 +305,64 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
+/*-----------------------------------*\
+ #individual page 
+\*-----------------------------------*/
+.recent-project-caption{
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+.project-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+/* Container for the entire project section */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px; /* Space between projects */
+  gap: 20px;
+}
+
+/* Text content on the left */
+.project-text-content {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  flex: 1;
+  max-width: 50%; /* Limit text column width to 45% of container */
+  padding: 20px;
+}
+
+/* Image content on the right, using Grid to layout images in 2 columns */
+.project-image-grid {
+  flex: 1;
+  max-width: 100%; /* Limit image column width to 45% of container */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  /* flex-direction: column; Arrange images vertically */
+  gap: 20px; /* Space between images */
+  padding: 20px;
+}
+
+/* Ensure full width for single images in case of an odd number of images */
+.project-image-grid .recent-project-image-wrapper:nth-child(odd):last-child {
+  grid-column: span 2; /* Make the last image span both columns if it's alone */
+}
+/* For small screens, stack the text and images */
+@media (max-width: 768px) {
+  .project-container {
+      flex-direction: column;
+  }
+
+  .project-text-content,
+  .project-image-grid {
+      max-width: 100%; /* Full width for small screens */
+  }
+}
 
 
 
