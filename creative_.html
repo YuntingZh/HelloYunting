@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Designer - Yunting Zhao</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+          <!--- #SIDEBAR-->
+          <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./assets/images/AboutMe/my_headshot_small.png" alt="Yunting Zhao" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Yunting Zhao">Yunting Zhao</h1>
+                    <p class="title">Designer | Developer</p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span><ion-icon
+                        name="chevron-down"></ion-icon></button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:cucyzx@gmail.com" class="contact-link">cucyzx@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Berkeley, CA</address>
+                        </div>
+                    </li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/yuntingzhao/" class="social-link"><ion-icon
+                                name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://yuntingzhao.com/" class="social-link"><ion-icon
+                                name="home-outline"></ion-icon></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/yunlove3d/?hl=en" class="social-link"><ion-icon
+                                name="logo-instagram"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+      <!--- #main-content -->
+      <div class="main-content">
+        <!--- #NAVBAR -->
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>About</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Resume</button>
+                </li>
+                <!-- TODO: should rename this from portfolio to projects -->
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Portfolio</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="navbar-link active" data-nav-link>Creative Designer</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- Projects Section -->
+        <article class="creative active" data-page="creative">
+        <div id="projects-container"></div>
+    </article>
+
+    </div>
+        <!-- JavaScript to Load JSON -->
+        <script>
+            // Load the project data from the JSON file
+            fetch('./assets/data/projects.json')
+                .then(response => response.json())
+                .then(projects => {
+                    const container = document.getElementById('projects-container');
+                    projects.forEach(project => {
+                        let projectHTML = `
+                            <section class="project-container">
+                                <div class="project-text-content">
+                                    <h3 class="h3">${project.title}</h3>
+                                    <p>${project.short_description}</p>
+                                    <p>${project.detailed_description}</p>
+                                </div>
+                                <div class="project-image-content">
+                        `;
+                        project.images.forEach(image => {
+                            projectHTML += `
+                                <div class="recent-project-image-wrapper">
+                                    <img src="${image.src}" alt="${image.alt}" class="recent-project-image">
+                                    <p class="recent-project-caption">${image.caption}</p>
+                                </div>
+                            `;
+                        });
+                        projectHTML += `</div></section>`;
+                        container.innerHTML += projectHTML;
+                    });
+                })
+                .catch(error => console.error('Error loading project data:', error));
+        </script>
+    </main>
+</body>
+
+</html>

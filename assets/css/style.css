@@ -308,12 +308,6 @@ main {
 /*-----------------------------------*\
  #individual page 
 \*-----------------------------------*/
-.recent-project-caption{
-  color: var(--light-gray);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
 .project-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -343,9 +337,7 @@ main {
   max-width: 100%; /* Limit image column width to 45% of container */
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
-  /* flex-direction: column; Arrange images vertically */
-  gap: 20px; /* Space between images */
-  padding: 20px;
+  gap: 5px;
 }
 
 /* Ensure full width for single images in case of an odd number of images */
@@ -362,6 +354,18 @@ main {
   .project-image-grid {
       max-width: 100%; /* Full width for small screens */
   }
+}
+.signlepage-project-image {
+  border-radius: 14px;
+  width: 100%; /* Makes the image half the width of its container */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+.signlepage-project-caption {
+  margin-top: 10px; /* Adds some space between the image and the caption */
+  color: white; 
+  text-align: center;
 }
 
 
