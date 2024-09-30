@@ -193,13 +193,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     }
   }
-  //set the portfolio as homepage when web load
+  //set the Projects as homepage when web load
   const navigationLinks = document.querySelectorAll("[data-nav-link]");
   const pages = document.querySelectorAll("[data-page]");
   // --------------------
-  // Set the initial active page to "Portfolio"
+  // Set the initial active page to "Projects"
   pages.forEach((page) => {
-    if (page.dataset.page === "portfolio") {
+    if (page.dataset.page === "projects") {
       page.classList.add("active");
     } else {
       page.classList.remove("active");
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
   navigationLinks.forEach((link) => {
-    if (link.innerHTML.toLowerCase() === "portfolio") {
+    if (link.innerHTML.toLowerCase() === "projects") {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
@@ -231,4 +231,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     }
   }
+   // Add the "Back to Portfolio" button dynamically if there's a reference in the URL
+   const urlParams = new URLSearchParams(window.location.search);
+   const ref = urlParams.get('ref');
+
+   if (ref) {
+       // Create the "Back to Portfolio" button dynamically
+       const backToPortfolioButton = document.createElement('li');
+       backToPortfolioButton.classList.add('navbar-item');
+       backToPortfolioButton.innerHTML = `
+           <button class="navbar-link" onclick="window.location.href='${ref}_designer.html'">Back to Portfolio</button>
+       `;
+
+       // Append the button to the navbar list
+       document.querySelector('.navbar-list').appendChild(backToPortfolioButton);
+   }
 });

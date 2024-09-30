@@ -82,7 +82,9 @@
                 <!--
         - #NAVBAR
       -->
-                <nav class="navbar">
+        <!-- TODO: should rename this from portfolio to projects -->
+        <!-- TODO:Add individual portfolio -->
+                <!-- <nav class="navbar">
                     <ul class="navbar-list">
                         <li class="navbar-item">
                             <button class="navbar-link" data-nav-link>About</button>
@@ -90,19 +92,31 @@
                         <li class="navbar-item">
                             <button class="navbar-link" data-nav-link>Resume</button>
                         </li>
-                        <!-- TODO: should rename this from portfolio to projects -->
+                       
                         <li class="navbar-item">
                             <button class="navbar-link active" data-nav-link>Portfolio</button>
-                        </li>
-                        <!-- TODO:Add individual portfolio -->
+                        </li> -->
+                        
                         <!-- <li class="navbar-item">
                             <button class="navbar-link" data-nav-link>Blog</button>
                         </li> -->
-                        <!-- <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>Art </button>
-                        </li> -->
+                        <!-- <li class="navbar-item"> -->
+                      
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <button class="navbar-link " data-nav-link>About</button>
+                        </li>
+                        <li class="navbar-item">
+                            <button class="navbar-link" data-nav-link>Resume</button>
+                        </li>
+                        <li class="navbar-item">
+                            <button class="navbar-link active"  data-nav-link>Projects</button>
+                        </li>
+                        <!-- Dynamic Back to Portfolio button will be added here by JavaScript -->
                     </ul>
                 </nav>
+                
                 <!--
         - #ABOUT
       -->
@@ -435,10 +449,11 @@
     
                 </article>
                 <!--
-        - #PORTFOLIO
+        - #PORTFOLIO(now rename to Projects)
       -->
 
-    <article class="portfolio" data-page="portfolio">
+    <article class="portfolio" data-page="projects"> 
+        <!-- <data-page name needs to match navi bar name> -->
   <header>
     <h2 class="h2 article-title">Portfolio</h2>
   </header>
@@ -451,7 +466,7 @@
         <button data-filter-btn>Design Engineering</button>
       </li>
       <li class="filter-item">
-        <button data-filter-btn>Product Design</button>
+        <button data-filter-btn>XR</button>
       </li>
       <li class="filter-item">
         <button data-filter-btn>Technical Art</button>
@@ -472,7 +487,7 @@
           <button data-select-item>Design Engineering</button>
         </li>
         <li class="select-item">
-          <button data-select-item>Product Design</button>
+          <button data-select-item>XR</button>
         </li>
         <li class="select-item">
           <button data-select-item>Technical Art</button>
