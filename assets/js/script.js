@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           event.preventDefault();
 
           const project = projects[index];
-          
+
           const modalImg = document.querySelector('[data-modal-img]');
           modalImg.src = project.imgSrc;
           modalImg.alt = project.imgAlt;
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             imgElement.src = image;
             additionalImagesContainer.appendChild(imgElement);
           });
-          
+
           testimonialsModalFunc(); // Show the modal
         });
       });
@@ -193,10 +193,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     }
   }
-
+  //set the portfolio as homepage when web load
   const navigationLinks = document.querySelectorAll("[data-nav-link]");
   const pages = document.querySelectorAll("[data-page]");
+  // --------------------
+  // Set the initial active page to "Portfolio"
+  pages.forEach((page) => {
+    if (page.dataset.page === "portfolio") {
+      page.classList.add("active");
+    } else {
+      page.classList.remove("active");
+    }
+  });
 
+  navigationLinks.forEach((link) => {
+    if (link.innerHTML.toLowerCase() === "portfolio") {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+
+  // Handle click events for navigation links
   if (navigationLinks && pages) {
     for (let i = 0; i < navigationLinks.length; i++) {
       navigationLinks[i].addEventListener("click", function () {
