@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
        const backToPortfolioButton = document.createElement('li');
        backToPortfolioButton.classList.add('navbar-item');
        backToPortfolioButton.innerHTML = `
-           <button class="navbar-link" onclick="window.location.href='${ref}_designer.html'">Back to Portfolio</button>
+           <button class="navbar-link" onclick="window.location.href='${ref}.html'">Back to Portfolio</button>
        `;
 
        // Append the button to the navbar list

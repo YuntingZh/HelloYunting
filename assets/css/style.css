@@ -341,7 +341,7 @@ main {
 }
 
 /* Ensure full width for single images in case of an odd number of images */
-.project-image-grid .recent-project-image-wrapper:nth-child(odd):last-child {
+.project-image-grid .signlepage-project-image-wrapper:nth-child(odd):last-child {
   grid-column: span 2; /* Make the last image span both columns if it's alone */
 }
 /* For small screens, stack the text and images */
