@@ -308,12 +308,18 @@ main {
 /*-----------------------------------*\
  #individual page 
 \*-----------------------------------*/
+.h3-title { 
+  color: white;
+  margin-top: 15px; 
+  margin-bottom: 10px; 
+}
 .project-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+.project-text p { margin-bottom: 15px; }
 /* Container for the entire project section */
 .project-container {
   display: flex;
