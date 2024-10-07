@@ -381,6 +381,55 @@ main {
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
+.toc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.toc-item {
+  margin-bottom: 10px;  /* Adds spacing between items */
+}
+
+.toc-link {
+  color: var(--white-2);
+  font-size: var(--fs-8);
+  text-decoration: none;
+  display: block;  /* Makes the whole area clickable */
+}
+
+.toc-link:active {
+  color:  var(--neon-pink-highlight);
+}
+
+.progress-bar {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.progress-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-item {
+  margin: 10px 0;
+  padding: 5px;
+  cursor: pointer;
+  color: var(--white-2);
+  font-size: var(--fs-8);
+}
+
+.progress-item.active {
+  color: var(--neon-pink-highlight);
+  font-weight: bold;
+}
 
 .sidebar {
   margin-bottom: 15px;

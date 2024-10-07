@@ -247,3 +247,32 @@ document.addEventListener('DOMContentLoaded', (event) => {
        document.querySelector('.navbar-list').appendChild(backToPortfolioButton);
    }
 });
+document.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.project-text');
+  let index = 0;
+
+  sections.forEach((section, i) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+      index = i;
+    }
+  });
+
+  // Update active progress item
+  document.querySelectorAll('.progress-item').forEach((item, i) => {
+    if (i === index) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+
+  // Update active Table of Contents item
+  document.querySelectorAll('.toc-item').forEach((item, i) => {
+    if (i === index) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+});
