@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Designer - Yunting Zhao</title>
+    <link rel="stylesheet" href="../assets/css/ursa_style.css">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <main>
+        <!--- #SIDEBAR-->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="../assets/images/AboutMe/my_headshot_small.png" alt="Yunting Zhao" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Yunting Zhao">Yunting Zhao</h1>
+                    <p class="title">Designer | Developer</p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span><ion-icon
+                        name="chevron-down"></ion-icon></button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="contacts-list">
+                    <ul class="progress-list">
+                        <li class="progress-item" data-section="#context">
+                            <a href="#context" class="toc-link">Context</a>
+                        </li>
+                        <li class="progress-item" data-section="#explore">
+                            <a href="#explore" class="toc-link">Explore</a>
+                        </li>
+                        <li class="progress-item" data-section="#final-design">
+                            <a href="#final-design" class="toc-link">Final Design</a>
+                        </li>
+                        <li class="progress-item" data-section="#reflection">
+                            <a href="#reflection" class="toc-link">Reflection</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+
+
+        </aside>
+        <div class="main-content">
+            <!--- #NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>Experience Designer</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="back-btn" onclick="window.location.href='../visual_designer_home.html';">Back to Home</button>
+                    </li>
+                </ul>
+            </nav>
+            <article class="ar_developer active" data-page="ar_developer">
+                <header>
+                    <h2 class="h2 article-title">Creative Designer</h2>
+                </header>
+
+                <!-- This is the part to put in content details -->
+
+
+                <section class="project-brief">
+                    <div class="project-info">
+                        <h2 class="project-title">Voice Interaction Design for Astronauts based on LLM and AR</h2>
+                        <p class="project-description">
+                            Ursa is an operating system designed for astronauts on the lunar missions, featuring a voice assistant
+                            with LLM, real-environment navigation, and non-intrusive user interface.
+                        </p>
+                    </div>
+                
+                    <div class="project-details">
+                        <div class="time-duration">
+                            <h3>Time Duration</h3>
+                            <p>9 Months <br>(Sep - Now)</p>
+                        </div>
+                    </div>
+                </section>
+                
+
+ <section class="overview-section">
+        <h2 class="section-title">Overview</h2>
+        <p class="overview-description">
+            In 2023, I joined a UC Berkeley team selected for NASA’s SUITS challenge. We were among the 11 top groups chosen by NASA to design an AR software on HoloLens to aid lunar missions. This project is still developing, more animated graphics will be provided soon in May 2024.
+        </p>
+
+        <p class="overview-subheading">
+            Astronauts need to complete a series of tasks on the moon, but they face numerous physical and cognitive limitations due to the challenging environment.
+        </p>
+
+        <div class="challenges">
+            <div class="challenge-item">
+                <img src="placeholder1.png" alt="Restricted Movement">
+                <p>Restricted Movement</p>
+            </div>
+            <div class="challenge-item">
+                <img src="placeholder2.png" alt="Multitasking Limitations">
+                <p>Multitasking Limitations</p>
+            </div>
+            <div class="challenge-item">
+                <img src="placeholder3.png" alt="Safety Concerns">
+                <p>Safety Concerns</p>
+            </div>
+            <div class="challenge-item">
+                <img src="placeholder4.png" alt="Limited Visibility">
+                <p>Limited Visibility</p>
+            </div>
+        </div>
+    </section>
+<section class="design-highlights-section">
+        <h2 class="section-title">Design Highlights</h2>
+
+        <div class="highlight-row">
+            <div class="highlight-item">
+                <img src="placeholder1.png" alt="LLM Assistant">
+                <p class="highlight-text"><strong>Ursa, Next!</strong></p>
+            </div>
+            <div class="highlight-item">
+                <h3 class="highlight-title">LLM-Powered Responsive Voice Assistant</h3>
+                <p class="highlight-description">
+                    Ursa's voice assistant is enhanced with Large Language Models (LLM), offering astronauts tailored instructions and feedback.
+                </p>
+            </div>
+        </div>
+
+        <div class="highlight-row">
+            <div class="highlight-item">
+                <h3 class="highlight-title">Non-intrusive Interfaces</h3>
+                <p class="highlight-description">
+                    Ursa features non-intrusive interfaces strategically placed in the user's peripheral vision, ensuring essential information is accessible without obstructing the lunar environment.
+                </p>
+            </div>
+            <div class="highlight-item">
+                <img src="placeholder2.png" alt="Non-intrusive Interfaces">
+            </div>
+        </div>
+
+        <div class="opportunities">
+            <h3 class="opportunities-title">Opportunities</h3>
+            <p class="opportunities-description">
+                How might we help astronauts explore the moon under physical and cognitive limitations using AI and AR technology?
+            </p>
+        </div>
+    </section>
+              <section class="context-section">
+    <h2 class="section-title">Context</h2>
+
+    <div class="flex-container">
+        <div class="user-image">
+            <img src="astronaut-placeholder.png" alt="Astronaut">
+            <p>Astronaut</p>
+        </div>
+        <div class="user-info">
+            <p><strong class="highlight-text">Heavy things on the hand</strong><br>
+                Astronauts often need to carry heavy equipment in their hands, which can hinder their ability to operate system with hands.</p>
+
+            <p><strong class="highlight-text">Harsh lunar environments</strong><br>
+                The extreme conditions on the moon require astronauts to continuously monitor their suits' signals and surrounding environment. Consequently, any system used must minimize cognitive load to prevent overburdening the astronauts and ensure their focus remains on critical tasks.</p>
+        </div>
+    </div>
+
+    <h3 class="tasks-title">What's the NASA’s Tasks</h3>
+
+    <div class="nasa-tasks">
+        <div class="task-list">
+            <ul>
+                <li>Task 1 - Navigation</li>
+                <li>Task 2 - Egress (Prepare suits for outdoor tasks)</li>
+                <li>Task 3 - Geo Sampling</li>
+                <li>Task 4 - Control Rover</li>
+                <li>Task 5 - Communicate between LMCC and Astronaut</li>
+            </ul>
+        </div>
+        <div class="task-diagram">
+            <img src="nasa-tasks-placeholder.png" alt="NASA Tasks Diagram">
+        </div>
+    </div>
+</section>
+<section class="explore-section">
+    <h2 class="section-title">Explore</h2>
+    <p class="explore-description">
+        I first created 2D prototypes to see how the requirements would function on a digital screen.
+    </p>
+
+    <div class="prototype-grid">
+        <div class="prototype-item">
+            <img src="prototype1-placeholder.png" alt="Prototype 1">
+        </div>
+        <div class="prototype-item">
+            <img src="prototype2-placeholder.png" alt="Prototype 2">
+        </div>
+        <div class="prototype-item">
+            <img src="prototype3-placeholder.png" alt="Prototype 3">
+        </div>
+        <div class="prototype-item">
+            <img src="prototype4-placeholder.png" alt="Prototype 4">
+        </div>
+        <div class="prototype-item">
+            <img src="prototype5-placeholder.png" alt="Prototype 5">
+        </div>
+        <div class="prototype-item">
+            <img src="prototype6-placeholder.png" alt="Prototype 6">
+        </div>
+        <div class="prototype-item">
+            <img src="prototype7-placeholder.png" alt="Prototype 7">
+        </div>
+    </div>
+</section>
+<section class="final-design-section">
+    <h2 class="section-title">Final Design</h2>
+
+    <!-- Principle 1 -->
+    <div class="principle-section">
+        <h3 class="principle-title">PRINCIPLE 1</h3>
+        <h4 class="principle-subtitle">Provide actionable insights, not just raw data.</h4>
+
+        <div class="comparison-boxes">
+            <div class="dont-box">
+                <h5>Don't</h5>
+                <div class="dialogue">
+                    <p><span class="icon">👤</span> User: “Ursa, what’s my heart rate?”</p>
+                    <p><span class="icon">🐻</span> Ursa: “Your heart rate is 90 bpm.”</p>
+                </div>
+                <p class="box-description">This provides only the number without any interpretation or guidance.</p>
+            </div>
+
+            <div class="do-box">
+                <h5>Do</h5>
+                <div class="dialogue">
+                    <p><span class="icon">👤</span> User: “Ursa, what’s my heart rate?”</p>
+                    <p><span class="icon">🐻</span> Ursa: “Your heart rate is 90 bpm {heart_rate}, and it’s within the nominal {nominal} range.”</p>
+                </div>
+                <p class="box-description">Here, it gives the heart rate and informs the astronaut that it’s within a safe range.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Principle 2 -->
+    <div class="principle-section">
+        <h3 class="principle-title">PRINCIPLE 2</h3>
+        <h4 class="principle-subtitle">The system should dynamically recognize and interpret alternative words that convey the same intent.</h4>
+        
+        <div class="intent-structure">
+            <div class="intent-box">
+                <p>Intent</p>
+                <p>User wants to move to the next task</p>
+            </div>
+            <div class="utterance-box">
+                <p>Utterance</p>
+                <p>👤 User: “Hi Ursa!”</p>
+            </div>
+            <div class="slot-box">
+                <p>Alternative Slot</p>
+                <p>👤 User: “Move to next task”</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Principle 3 -->
+    <div class="principle-section">
+        <h3 class="principle-title">PRINCIPLE 3</h3>
+        <h4 class="principle-subtitle">Use visual feedback to assist communication</h4>
+
+        <div class="feedback-icons">
+            <div class="feedback-item">
+                <p>Ursa is responding</p>
+                <img src="placeholder-response.png" alt="Ursa responding">
+            </div>
+            <div class="feedback-item">
+                <p>Ursa is listening</p>
+                <img src="placeholder-listening.png" alt="Ursa listening">
+            </div>
+            <div class="feedback-item">
+                <p>Ursa is reading</p>
+                <img src="placeholder-reading.png" alt="Ursa reading">
+            </div>
+            <div class="feedback-item">
+                <p>Ursa shows messages from LMCC</p>
+                <img src="placeholder-message.png" alt="Ursa showing messages">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="learnings-section">
+    <h2 class="section-title">Learnings & Reflections</h2>
+
+    <div class="learnings-content">
+        <div class="icon-and-text">
+            <img src="icon-placeholder.png" alt="VUI Icon" class="vui-icon">
+            <div class="text-content">
+                <h4>Designing VUI to avoid ambiguity</h4>
+                <p>
+                    Clear, precise voice commands are crucial to prevent misunderstandings. We focused on creating intuitive prompts and responses to ensure users received accurate feedback from the AR assistant.
+                </p>
+            </div>
+        </div>
+
+        <div class="images-row">
+            <div class="image-item">
+                <img src="image1-placeholder.png" alt="NASA Houston Center">
+                <p>Present at NASA Houston Center</p>
+            </div>
+            <div class="image-item">
+                <img src="image2-placeholder.png" alt="Whole dev team">
+                <p>With the whole dev team</p>
+            </div>
+            <div class="image-item">
+                <img src="image3-placeholder.png" alt="Award Certificate">
+                <p>Award Certificate</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

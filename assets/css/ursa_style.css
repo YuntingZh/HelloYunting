@@ -245,11 +245,13 @@ article.active {
     font-size: var(--fs-7);
     font-weight: var(--fw-500);
 }
+
 /* adjust the space between the title and main-content  */
 .article-title {
     position: relative;
     padding-bottom: 7px;
-    margin-bottom: 1rem; /* Adds space below the title */
+    margin-bottom: 1rem;
+    /* Adds space below the title */
 }
 
 .article-title::after {
@@ -285,15 +287,7 @@ article.active {
 }
 
 
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
 
-main {
-    margin: 15px 12px;
-    margin-bottom: 75px;
-    min-width: 259px;
-  }
 /*-----------------------------------*\
     #SIDEBAR
   \*-----------------------------------*/
@@ -1111,26 +1105,38 @@ main {
     color: var(--bittersweet-shimmer);
     margin-bottom: 1rem;
 }
+
 /* This is a tag css, can be use for any tag */
 .project-tag {
-    font-size: 0.9rem; /* Adjust to match your desired text size */
-    color: var(--fluorescent-pink); /* Text color matching your design */
-    padding: 0.5rem 1rem; /* Padding for inside spacing */
-    border-radius: 50px; /* Fully rounded corners */
-    background: linear-gradient(to right, hsl(311, 100%, 72%), hsl(317, 86%, 34%)); /* Gradient background */
+    font-size: 0.9rem;
+    /* Adjust to match your desired text size */
+    color: var(--fluorescent-pink);
+    /* Text color matching your design */
+    padding: 0.5rem 1rem;
+    /* Padding for inside spacing */
+    border-radius: 50px;
+    /* Fully rounded corners */
+    background: linear-gradient(to right, hsl(311, 100%, 72%), hsl(317, 86%, 34%));
+    /* Gradient background */
     position: relative;
     display: inline-block;
     text-align: center;
-    font-weight: 500; /* Adjust font weight if needed */
+    font-weight: 500;
+    /* Adjust font weight if needed */
     z-index: 1;
 }
 
 .project-tag::before {
     content: "";
     position: absolute;
-    top: 2px; bottom: 2px; left: 2px; right: 2px;
-    background-color: var(--smoky-black); /* Background of the tag itself */
-    border-radius: 50px; /* Ensure rounded corners for the inner background */
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: var(--smoky-black);
+    /* Background of the tag itself */
+    border-radius: 50px;
+    /* Ensure rounded corners for the inner background */
     z-index: -1;
 }
 
@@ -1160,4 +1166,528 @@ main {
         }
     }
 
+}
+
+/*-----------------------------------*\
+    #ursa
+\*-----------------------------------*/
+/* Project Brief Section */
+.project-brief {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-info {
+    max-width: 70%; /* Adjust to control width */
+}
+
+.project-title {
+    font-size: 1.8em;
+    color: #00ff00;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 1.1em;
+    color: #cfcfcf;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.project-details {
+    background-color: #333;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-details h3 {
+    font-size: 1.2em;
+    color: #00ff00;
+    margin-bottom: 5px;
+}
+
+.project-details p {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Vertical line separator */
+.project-details::before {
+    content: "";
+    width: 3px;
+    background-color: #00ff00;
+    height: 100%;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    border-radius: 5px;
+}
+/* ------------------ */
+
+/* overview */
+.overview-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.overview-description {
+    font-size: 1.2em;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overview-subheading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.challenges {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.challenge-item {
+    width: 22%;
+    text-align: center;
+}
+
+.challenge-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.challenge-item p {
+    font-size: 1em;
+    color: #f5f5f5;
+}
+
+/* Design hightlights */
+.design-highlights-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.highlight-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.highlight-item {
+    width: 48%;
+    text-align: left;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.highlight-title {
+    font-size: 1.3em;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+.highlight-description {
+    font-size: 1.1em;
+    color: #cfcfcf;
+}
+
+.opportunities {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.opportunities-title {
+    font-size: 1.8em;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+.opportunities-description {
+    font-size: 1.2em;
+    color: #cfcfcf;
+}
+
+.highlight-text {
+    font-size: 1.3em;
+    color: #00ff00;
+    text-align: center;
+}
+
+/* context */
+.context-section {
+    margin: 40px 0;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+/* .user-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+} */
+
+.user-image {
+    width: 30%;
+    text-align: center;
+}
+
+.user-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.user-image p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #f5f5f5;
+}
+
+.user-info {
+    width: 65%;
+    text-align: left;
+}
+
+.highlight-text {
+    color: #00ff00;
+    font-size: 1.3em;
+}
+
+.tasks-title {
+    font-size: 2em;
+    color: #00ff00;
+    margin-bottom: 30px;
+}
+
+.nasa-tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.task-list {
+    width: 35%;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.task-list ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #f5f5f5;
+}
+
+.task-list ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.task-list ul li::before {
+    content: '●';
+    color: #00ff00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(5px);
+}
+
+.task-diagram {
+    width: 60%;
+}
+
+.task-diagram img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Explore */
+.explore-section {
+    margin: 40px 0;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.explore-description {
+    font-size: 1.2em;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+}
+
+.prototype-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.prototype-item {
+    width: 100%;
+}
+
+.prototype-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* final design */
+.final-design-section {
+    margin: 40px 0;
+    color: #f5f5f5;
+}
+
+.principle-section {
+    margin-bottom: 50px;
+}
+
+.principle-title {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.principle-subtitle {
+    font-size: 1.3em;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.comparison-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dont-box,
+.do-box {
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    text-align: left;
+}
+
+.dont-box {
+    border: 2px solid #666;
+}
+
+.do-box {
+    border: 2px solid #00ff00;
+}
+
+.dialogue p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.box-description {
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+
+.intent-structure {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.intent-box,
+.utterance-box,
+.slot-box {
+    width: 30%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+.intent-box p,
+.utterance-box p,
+.slot-box p {
+    font-size: 1.1em;
+}
+
+.intent-box {
+    border: 2px solid #1e90ff;
+}
+
+.utterance-box {
+    border: 2px solid #ffcc00;
+}
+
+.slot-box {
+    border: 2px solid #1e90ff;
+}
+
+.feedback-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feedback-item {
+    width: 22%;
+    text-align: center;
+}
+
+.feedback-item p {
+    margin-bottom: 10px;
+    color: #00ff00;
+}
+
+.feedback-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* reflection */
+.learnings-section {
+    margin: 40px 0;
+    color: #f5f5f5;
+}
+
+.learnings-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icon-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.vui-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.text-content h4 {
+    font-size: 1.5em;
+    color: #00ff00;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    color: #cfcfcf;
+    max-width: 700px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.image-item {
+    width: 30%;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image-item p {
+    font-size: 1em;
+    color: #cfcfcf;
+}
+/* shared style */
+.section-title {
+    font-size: 2em;
+    color: #e0ffe0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text-content {
+    font-size: 1.2em;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.img-rounded {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Section-Specific Styles */
+.opportunities {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.opportunities-title {
+    font-size: 1.8em;
+    color: #00ff00;
+}
+
+.user-image img {
+    border-radius: 50%;
+}
+
+.dialogue p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
