@@ -245,13 +245,11 @@ article.active {
     font-size: var(--fs-7);
     font-weight: var(--fw-500);
 }
-
 /* adjust the space between the title and main-content  */
 .article-title {
     position: relative;
     padding-bottom: 7px;
-    margin-bottom: 1rem;
-    /* Adds space below the title */
+    margin-bottom: 1rem; /* Adds space below the title */
 }
 
 .article-title::after {
@@ -287,7 +285,15 @@ article.active {
 }
 
 
+/*-----------------------------------*\
+  #MAIN
+\*-----------------------------------*/
 
+main {
+    margin: 15px 12px;
+    margin-bottom: 75px;
+    min-width: 259px;
+  }
 /*-----------------------------------*\
     #SIDEBAR
   \*-----------------------------------*/
@@ -988,187 +994,6 @@ article.active {
 }
 
 /*-----------------------------------*\
-    #PROJECT GRID
-  \*-----------------------------------*/
-
-/* Featured Project */
-.featured-project {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.project-card-large {
-    box-shadow: var(--shadow-1);
-    z-index: 1;
-    position: relative;
-    background-color: var(--eerie-black-3);
-    border: 1px solid var(--jet);
-    border-radius: 16px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    /* Make it full width */
-    grid-column: span 2;
-    /* Make it span 2 columns in the grid */
-}
-
-.project-image-large {
-    max-width: 50%;
-    border-radius: 12px;
-}
-
-.project-info-large {
-    margin-left: 2rem;
-}
-
-.project-info-large h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: var(--white-1);
-}
-
-.project-info-large .project-label {
-    font-size: 1rem;
-    color: var(--fluorescent-pink);
-    margin-bottom: 0.5rem;
-}
-
-.learn-more-btn {
-    background: var(--button-gradient);
-    /* Gradient for the button */
-    color: var(--white-1);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.learn-more-btn:hover {
-    opacity: 0.9;
-}
-
-/* Project Grid */
-.main-content,
-.project-grid {
-    box-sizing: border-box;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Two columns by default */
-    gap: 2rem;
-    box-sizing: border-box;
-    /* Include padding and border in element width */
-    width: 100%;
-    /* Ensure the grid doesn't overflow */
-}
-
-.project-card {
-    background-color: var(--eerie-black-3);
-    border: 1px solid var(--jet);
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width: 0;
-}
-
-.project-image {
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    width: 100%;
-    /* Make sure the image takes full width of the container */
-    object-fit: cover;
-}
-
-.project-info {
-    text-align: left;
-    word-wrap: break-word;
-    /* Prevent text from overflowing */
-}
-
-.project-info h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    color: var(--white-1);
-}
-
-.project-info .project-label {
-    font-size: 0.9rem;
-    color: var(--bittersweet-shimmer);
-    margin-bottom: 1rem;
-}
-
-/* This is a tag css, can be use for any tag */
-.project-tag {
-    font-size: 0.9rem;
-    /* Adjust to match your desired text size */
-    color: var(--fluorescent-pink);
-    /* Text color matching your design */
-    padding: 0.5rem 1rem;
-    /* Padding for inside spacing */
-    border-radius: 50px;
-    /* Fully rounded corners */
-    background: linear-gradient(to right, hsl(311, 100%, 72%), hsl(317, 86%, 34%));
-    /* Gradient background */
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    font-weight: 500;
-    /* Adjust font weight if needed */
-    z-index: 1;
-}
-
-.project-tag::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    bottom: 2px;
-    left: 2px;
-    right: 2px;
-    background-color: var(--smoky-black);
-    /* Background of the tag itself */
-    border-radius: 50px;
-    /* Ensure rounded corners for the inner background */
-    z-index: -1;
-}
-
-
-/*-----------------------------------*\
-    #MEDIA QUERIES
-\*-----------------------------------*/
-
-/* Responsive layout for small screens */
-@media (max-width: 768px) {
-    .project-card-large {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .project-info-large {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-
-    @media (max-width: 768px) {
-        .project-grid {
-            grid-template-columns: 1fr;
-            /* Switch to one column for smaller screens */
-            gap: 1rem;
-            /* Reduce gap for smaller screens */
-        }
-    }
-
-}
-
-/*-----------------------------------*\
     #ursa
 \*-----------------------------------*/
 /* Project Brief Section */
@@ -1286,7 +1111,7 @@ article.active {
 /* Images with Text */
 
 
-.challenges-image-container {
+.tri-image-container {
     width: 30%;
     background-color: #444;
     padding: 20px;
@@ -1294,28 +1119,30 @@ article.active {
     text-align: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out;
+    
 }
 
-.challenges-image-container:hover {
+.tri-image-container:hover {
     transform: scale(1.05);
 }
-
-
-.icon {
-    margin-bottom: 10px;
-}
-
-.challenges-image-container img {
-    width: 100%;
+.tri-image-container .full-image {
+    width: 100%; /* Full width for regular images */
     border-radius: 10px;
     margin-bottom: 10px;
 }
-.icon {
-    width: 20%;
-    text-align: center;
+
+.tri-image-container .icon-image {
+    width: 20%; /* Smaller size for icons */
     border-radius: 10px;
     margin-bottom: 10px;
+    display: block;
+    margin: 0 auto; /* Center the icon horizontally */
 }
+
+
+
+
+
 
 /* Design hightlights */
 .design-highlights-section {
@@ -1501,38 +1328,7 @@ article.active {
     color: #aaaaaa;
 }
 
-.intent-structure {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
-.intent-box,
-.utterance-box,
-.slot-box {
-    width: 30%;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #333;
-}
-
-.intent-box p,
-.utterance-box p,
-.slot-box p {
-    font-size: 1.1em;
-}
-
-.intent-box {
-    border: 2px solid #1e90ff;
-}
-
-.utterance-box {
-    border: 2px solid #ffcc00;
-}
-
-.slot-box {
-    border: 2px solid #1e90ff;
-}
 
 .feedback-icons {
     display: flex;
@@ -1555,24 +1351,13 @@ article.active {
     height: auto;
     border-radius: 8px;
 }
-/* reflection */
-.image-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
 
-.image-item p {
-    font-size: 1em;
-    color: #cfcfcf;
-}
 /* shared style */
 .horizontal-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-top: 40px;
+    margin-bottom: 20px;
 }
 /* User icon */
 .user-icon img {
@@ -1583,10 +1368,10 @@ article.active {
     display: inline-block;
 }
 .box {
-    background-color: #222;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 30px;
+
   text-align: center;
 }
 /* ------------- */
@@ -1646,19 +1431,6 @@ article.active {
     margin-bottom: 40px;
 }
 
-.box {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.divider {
-    /* Divider styling */
-    width: 3px;
-    height: 150px;
-    background-color: #00ff00;
-}
 
 
 .img-rounded {
@@ -1741,7 +1513,7 @@ article.active {
 }
 
 .toggle-arrow:hover {
-    color: #ffffff;
+    color: #d9ff00;
     animation: none; /* Stop animation when hovered for a smooth transition */
 }
 
