@@ -1090,7 +1090,19 @@ main {
 
 /* overview */
 .overview-section {
+    margin-top: 40px;
     margin-bottom: 40px;
+}
+.highlight-item {
+    width: 48%;
+    text-align: left;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -1106,20 +1118,24 @@ main {
 /* Images with Text */
 
 
+/* Container for the tri-image */
 .tri-image-container {
-    width: 30%;
-    background-color: #444;
+    width: 50%;
+    background-color: transparent; /* No background */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Optional: soft shadow */
+    border: 2px solid rgba(255, 245, 214, 0.841); /* White border with some transparency */
+    position: relative; /* Ensures the hover text will be positioned relative to this */
     transition: transform 0.2s ease-in-out;
-    
 }
 
 .tri-image-container:hover {
     transform: scale(1.05);
 }
+
+/* Image settings */
 .tri-image-container .full-image {
     width: 100%; /* Full width for regular images */
     border-radius: 10px;
@@ -1134,56 +1150,33 @@ main {
     margin: 0 auto; /* Center the icon horizontally */
 }
 
-
-
-
-
-
-/* Design hightlights */
-.design-highlights-section {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-
-.highlight-item {
-    width: 48%;
-    text-align: left;
-}
-
-.highlight-item img {
+/* Hidden popup layer that appears on hover */
+.tri-image-container .popup-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-
-
-/* context */
-
-/* .user-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-} */
-
-.user-image {
-    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    color: #fff; /* White text */
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.user-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+/* Show the popup on hover */
+.tri-image-container:hover .popup-content {
+    display: block;
+    opacity: 1;
 }
 
-.user-image p {
+/* Ensure regular text is still visible */
+.tri-image-container p {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #f5f5f5;
 }
 
 /* cunyi */
@@ -1192,160 +1185,6 @@ main {
     font-size: 1.3em;
 }
 
-
-
-
-.task-list {
-    width: 50%;
-    background-color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: left;
-}
-
-.task-list ul {
-    list-style-type: none;
-    padding-left: 0;
-    color: #f5f5f5;
-}
-
-.task-list ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
-}
-
-.task-list ul li::before {
-    content: '●';
-    color: #FADBA0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateY(5px);
-}
-
-.task-diagram {
-    width: 50%;
-}
-
-.task-diagram img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Explore */
-.explore-section {
-    margin: 40px 0;
-    text-align: center;
-    color: #f5f5f5;
-}
-
-.explore-description {
-    font-size: 1.2em;
-    color: #cfcfcf;
-    margin-bottom: 30px;
-}
-
-.prototype-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    justify-items: center;
-}
-
-.prototype-item {
-    width: 100%;
-}
-
-.prototype-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* final design */
-.final-design-section {
-    margin: 40px 0;
-    color: #f5f5f5;
-}
-
-.principle-section {
-    margin-bottom: 50px;
-}
-
-.principle-title {
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.principle-subtitle {
-    font-size: 1.3em;
-    color: #FADBA0;
-    margin-bottom: 20px;
-}
-
-.comparison-boxes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.dont-box,
-.do-box {
-    width: 48%;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #333;
-    text-align: left;
-}
-
-.dont-box {
-    border: 2px solid #666;
-}
-
-.do-box {
-    border: 2px solid #FADBA0;
-}
-
-.dialogue p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.icon {
-    margin-right: 10px;
-}
-
-.box-description {
-    font-size: 0.9em;
-    color: #aaaaaa;
-}
-
-
-
-.feedback-icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.feedback-item {
-    width: 22%;
-    text-align: center;
-}
-
-.feedback-item p {
-    margin-bottom: 10px;
-    color: #FADBA0;
-}
-
-.feedback-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
 
 /* shared style */
 .horizontal-container {
@@ -1492,38 +1331,19 @@ main {
       /* Full width for small screens */
     }
   }
-  /* ----hide n show */
-  .hidden-content {
-    display: none;
+  /* ----overview */
+.inline-image {
+    float: left; /* Float the image to the left */
+    margin-right: 15px; /* Space between the image and the text */
+    margin-bottom: 10px;
+    width: 50%; /* Set the desired image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
 }
 
-.toggle-arrow {
-    cursor: pointer;
-    font-size: 24px;
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: #0dff00;
-    animation: breathing 2s ease-in-out infinite; /* Add the breathing animation */
-}
-
-.toggle-arrow:hover {
-    color: #d9ff00;
-    animation: none; /* Stop animation when hovered for a smooth transition */
-}
-
-/* Breathing animation */
-@keyframes breathing {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1); /* Slightly increase size */
-        opacity: 0.7; /* Reduce opacity for a subtle effect */
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+/* Clear floats after the text */
+.text-with-image:after {
+    content: "";
+    display: table;
+    clear: both;
 }

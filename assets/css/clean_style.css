@@ -1108,7 +1108,7 @@ main {
 
 .project-info .project-label {
     font-size: 0.9rem;
-    color: var(--bittersweet-shimmer);
+    color: #8e9cbb;
     margin-bottom: 1rem;
 }
 /* This is a tag css, can be use for any tag */
