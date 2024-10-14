@@ -2,11 +2,29 @@
 <html lang="en">
 
 <head>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Designer - Yunting Zhao</title>
     <link rel="stylesheet" href="./assets/css/clean_style.css">
+            <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/AboutMe/Website_icon_transparent.ico" type="image/x-icon">
+  <!--
+- custom css link
+-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--
+- google font link
+-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,26 +40,44 @@
                     <h1 class="name" title="Yunting Zhao">Yunting Zhao</h1>
                     <p class="title">Designer | Developer</p>
                 </div>
-                <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span><ion-icon
-                        name="chevron-down"></ion-icon></button>
+                <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span><ion-icon name="chevron-down"></ion-icon></button>
             </div>
             <div class="sidebar-info_more">
-                <!-- <div class="progress-bar"> -->
-                <div class="contacts-list">
-                    <ul class="progress-list">
-                        <li class="progress-item" data-section="#immersive-interaction"><a href="#immersive-interaction"
-                                class="toc-link">Immersive Interaction</a></li>
-                        <li class="progress-item" data-section="#motion-design"><a href="#motion-design"
-                                class="toc-link">Motion Design & Storytelling and Games</a></li>
-                        <li class="progress-item" data-section="#ux-design"><a href="#ux-design" class="toc-link">UX
-                                Design</a></li>
-                        <li class="progress-item" data-section="#beyond-work"><a href="#beyond-work"
-                                class="toc-link">Beyond Work</a></li>
-                    </ul>
-                </div>
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:cucyzx@gmail.com" class="contact-link">cucyzx@gmail.com</a>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Berkeley, CA</address>
+                        </div>
+                    </li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/yuntingzhao/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://yuntingzhao.com/" class="social-link"><ion-icon name="home-outline"></ion-icon></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/yunlove3d/?hl=en" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </li>
+                </ul>
             </div>
-
-
         </aside>
         <div class="main-content">
             <!--- #NAVBAR -->
@@ -52,7 +88,7 @@
                     </li>
                     <li class="navbar-item">
                         <button class="navbar-link"
-                            onclick="window.location.href='index.html?ref=experience_designer'">More</button>
+                            onclick="window.location.href='index.html?ref=visual_designer_home'">More</button>
                     </li>
                 </ul>
             </nav>
@@ -96,7 +132,7 @@
                     </div>
 
                     <div class="project-card">
-                        <img src="./assets/images/projects/AI_art.png" alt="Print Art"
+                        <img src="./assets/images/projects/TechnicalArt/Design_Scifi.png" alt="Print Art"
                             class="project-image">
                         <div class="project-info">
                             <p class="project-label">PRINT ART</p>
