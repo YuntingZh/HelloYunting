@@ -297,18 +297,14 @@ main {
 /*-----------------------------------*\
     #SIDEBAR
   \*-----------------------------------*/
-.toc-title {
-    color: var(--white-2);
-    font-size: var(--fs-7);
-}
 
 .toc-link {
-    color: var(--white-2);
-    font-size: var(--fs-8);
-}
-
-.toc-link:active {
-    color: var(--neon-pink-highlight);
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
 .progress-bar {
@@ -334,11 +330,10 @@ main {
     font-size: var(--fs-8);
 }
 
-.progress-item.active {
-    color: var(--neon-pink-highlight);
+.progress-item.active .toc-link {
+    color: #00ff00; /* Highlight active item */
     font-weight: bold;
 }
-
 .sidebar {
     margin-bottom: 15px;
     max-height: 112px;
