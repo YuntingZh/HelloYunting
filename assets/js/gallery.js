@@ -49,7 +49,18 @@ const images = [
     { src: '../assets/images/projects/art_viusal/sketch_waterColor2.JPG', description: 'Watercolor Sketch 2', tags: ['Sketch'] },
     { src: '../assets/images/projects/art_viusal/unreal_ocean.gif', description: 'Unreal Ocean GIF', tags: ['3D', 'GIF'] },
     { src: '../assets/images/projects/art_viusal/unreal_ocean2.gif', description: 'Unreal Ocean 2 GIF', tags: ['3D', 'GIF'] },
-    { src: '../assets/images/projects/art_viusal/unreal_render.png', description: 'Unreal Render', tags: ['3D'] }
+    { src: '../assets/images/projects/art_viusal/unreal_render.png', description: 'Unreal Render', tags: ['3D'] },
+    { src: '../assets/images/projects/art_viusal/digitalsketch_dancer.PNG', description: 'Digital Sketch Dancer', tags: ['Digital 2D'] },
+    { src: '../assets/images/projects/art_viusal/digitalsketch_watercolor_freso.PNG', description: 'Digital Sketch Watercolor Fresco', tags: ['Digital 2D'] },
+    { src: '../assets/images/projects/art_viusal/digitalsketch_young_girl.PNG', description: 'Digital Sketch Young Girl', tags: ['Digital 2D'] },
+    { src: '../assets/images/projects/art_viusal/sketch_bag_not_original.jpeg', description: 'Sketch Bag Not Original', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_bags.jpeg', description: 'Sketch Bags', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_anime.jpeg', description: 'Watercolor Sketch Anime', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_cats.jpeg', description: 'Watercolor Sketch Cats', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_char.jpeg', description: 'Watercolor Sketch Character', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_dragon.JPG', description: 'Watercolor Sketch Dragon', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_vessel.jpeg', description: 'Watercolor Sketch Vessel', tags: ['Sketch'] }
+
 ];
 
 
@@ -57,22 +68,22 @@ const images = [
 function loadImages(filterTag) {
     gallery.innerHTML = ''; // Clear the gallery
     const filteredImages = filterTag === 'All' ? images : images.filter(image => image.tags.includes(filterTag));
-    
+
     filteredImages.forEach(image => {
         const galleryItem = document.createElement('div');
         galleryItem.classList.add('gallery-item');
-        
+
         const imgElement = document.createElement('img');
         imgElement.src = image.src;
         imgElement.alt = image.description;
-        
+
         const infoElement = document.createElement('div');
         infoElement.classList.add('info');
         infoElement.innerText = image.description;
-        
+
         galleryItem.appendChild(imgElement);
         galleryItem.appendChild(infoElement);
-        
+
         gallery.appendChild(galleryItem);
     });
 }
