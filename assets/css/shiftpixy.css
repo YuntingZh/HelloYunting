@@ -331,7 +331,7 @@ main {
 }
 
 .progress-item.active .toc-link {
-    color: #00ff00; /* Highlight active item */
+    color: #ff8441; /* Highlight active item */
     font-weight: bold;
 }
 .sidebar {
@@ -989,7 +989,7 @@ main {
 }
 
 /*-----------------------------------*\
-    #ursa
+ shiftpixy
 \*-----------------------------------*/
 /* Project Brief Section */
 .project-brief {
@@ -1040,7 +1040,7 @@ main {
 }
 
 .time-duration h3 {
-    color: #00ff00;
+    color: #ffa36e;
 }
 /* ------- */
 
@@ -1050,7 +1050,7 @@ main {
 
 .project-title {
     font-size: 1.8em;
-    color: #00ff00;
+    color: #ffa36e;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -1066,7 +1066,7 @@ main {
 
 .project-details h3 {
     font-size: 1.2em;
-    color: #00ff00;
+    color: #ffa36e;
     margin-bottom: 5px;
 }
 
@@ -1079,7 +1079,7 @@ main {
 .project-details::before {
     content: "";
     width: 3px;
-    background-color: #00ff00;
+    background-color: #ffa36e;
     height: 100%;
     position: absolute;
     left: -15px;
@@ -1087,6 +1087,23 @@ main {
     border-radius: 5px;
 }
 /* ------------------ */
+/* Ensure the content slides smoothly */
+.animated-section {
+    transition: transform 0.1s linear; /* Smooth transition for sliding */
+}
+
+/* Smooth opacity transition for hero image */
+.hero-image {
+    width:  100%;
+    opacity: 1;
+    transition: opacity 0.1s linear; /* Smooth fading transition */
+}
+
+/* Class to unlock main content for scrolling */
+.main-content.unlocked {
+    overflow: visible;
+}
+
 
 /* overview */
 .overview-section {
@@ -1145,11 +1162,17 @@ main {
     margin-bottom: 40px;
 }
 
-
 .highlight-item {
+    min-height: 250px; 
     width: 48%;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* Centers the text horizontally */
+    text-align: center;   /* Makes the text aligned to center */
+    height: 100%;         /* Ensures the container takes up the available height */
 }
+
 
 .highlight-item img {
     width: 100%;
@@ -1188,7 +1211,7 @@ main {
 
 /* cunyi */
 .highlight-text {
-    color: #00ff00;
+    color: #ffa36e;
     font-size: 1.3em;
 }
 
@@ -1218,7 +1241,7 @@ main {
 
 .task-list ul li::before {
     content: '●';
-    color: #00ff00;
+    color: #ffa36e;
     position: absolute;
     left: 0;
     top: 0;
@@ -1283,7 +1306,7 @@ main {
 
 .principle-subtitle {
     font-size: 1.3em;
-    color: #00ff00;
+    color: #ffa36e;
     margin-bottom: 20px;
 }
 
@@ -1306,7 +1329,7 @@ main {
 }
 
 .do-box {
-    border: 2px solid #00ff00;
+    border: 2px solid #ffa36e;
 }
 
 .dialogue p {
@@ -1338,7 +1361,7 @@ main {
 
 .feedback-item p {
     margin-bottom: 10px;
-    color: #00ff00;
+    color: #ffa36e;
 }
 
 .feedback-item img {
@@ -1348,6 +1371,37 @@ main {
 }
 
 /* shared style */
+.spacer {
+    height: 30px; /* Adjust the height to control the space */
+}
+.small-spacer {
+    height: 15px; /* Adjust the height to control the space */
+}
+
+
+.project-link {
+    display: inline-block; /* Makes the link behave like a button */
+    font-size: 0.9rem; /* Adjust to match your desired text size */
+    color: #ffa36e; /* Text color matching your design */
+    padding: 0.5rem 1rem; /* Padding for inside spacing */
+    border-radius: 50px; /* Fully rounded corners */
+    background: linear-gradient(to right, hsl(49, 100%, 72%), hsl(32, 100%, 50%)); /* Gradient background */
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500; /* Adjust font weight if needed */
+    z-index: 1;
+}
+
+.project-link::before {
+    content: "";
+    position: absolute;
+    top: 2px; bottom: 2px; left: 2px; right: 2px;
+    background-color: var(--smoky-black); /* Background of the tag itself */
+    border-radius: 50px; /* Ensure rounded corners for the inner background */
+    z-index: -1;
+}
+
 .horizontal-container {
     display: flex;
     justify-content: space-between;
@@ -1388,8 +1442,10 @@ main {
 .project-small-text {
     font-size: 0.9em;
     color: #cfcfcf;
-    margin-bottom: 10px;
+    margin: 0;           /* Removes margins */
     line-height: 1.6;
+
+    align-items: center;  /* Vertically centers the text */
 }
 .project-highlight-text {
     color: #fff;             /* Black text */
@@ -1398,15 +1454,28 @@ main {
 /* this is the secondary title */
 .highlight-title {
     font-size: 1.3em;
-    color: #00ff00;
+    color: #ffa36e;
     margin-bottom: 10px;
+}
+.sub-highlight-title {
+    font-size: 1.1em;
+    color: #ffa36e;
+    margin-bottom: 0.5em; /* Adds some space below the title */
+    text-align: center;   /* Ensures title is centered */
 }
 .center{
     text-align: center;
 }
+
 .section-title {
     font-size: 2em;
-    color: #e0ffe0;
+    color: #ffd0b5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sub-section-title {
+    font-size: 1.5em;
+    color: #ffd0b5;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -1439,7 +1508,7 @@ main {
 
 .opportunities-title {
     font-size: 1.8em;
-    color: #00ff00;
+    color: #ffa36e;
 }
 
 .user-image img {
@@ -1492,38 +1561,3 @@ main {
       /* Full width for small screens */
     }
   }
-  /* ----hide n show */
-  .hidden-content {
-    display: none;
-}
-
-.toggle-arrow {
-    cursor: pointer;
-    font-size: 24px;
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: #0dff00;
-    animation: breathing 2s ease-in-out infinite; /* Add the breathing animation */
-}
-
-.toggle-arrow:hover {
-    color: #d9ff00;
-    animation: none; /* Stop animation when hovered for a smooth transition */
-}
-
-/* Breathing animation */
-@keyframes breathing {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1); /* Slightly increase size */
-        opacity: 0.7; /* Reduce opacity for a subtle effect */
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
