@@ -32,7 +32,6 @@ const images = [
     { src: '../assets/images/projects/art_viusal/digitalsketch_food.jpg', description: 'Digital Sketch Food', tags: ['Digital 2D'] },
     { src: '../assets/images/projects/art_viusal/digitalsketch_geko.png', description: 'Digital Sketch Geko', tags: ['Digital 2D'] },
     { src: '../assets/images/projects/art_viusal/digitalsketch_physco.png', description: 'Digital Sketch Physco', tags: ['Digital 2D'] },
-    { src: '../assets/images/projects/art_viusal/digitalsketch_product.png', description: 'Digital Sketch Product', tags: ['Digital 2D'] },
     { src: '../assets/images/projects/art_viusal/digitalsketch_room.JPG', description: 'Digital Sketch Room', tags: ['Digital 2D'] },
     { src: '../assets/images/projects/art_viusal/digitalsketch_self.png', description: 'Digital Sketch Self', tags: ['Digital 2D'] },
     { src: '../assets/images/projects/art_viusal/digitalsketch_yucatan.PNG', description: 'Digital Sketch Yucatan', tags: ['Digital 2D'] },
@@ -79,7 +78,7 @@ function loadImages(filterTag) {
 
         const infoElement = document.createElement('div');
         infoElement.classList.add('info');
-        infoElement.innerText = image.description;
+        //infoElement.innerText = image.description;
 
         galleryItem.appendChild(imgElement);
         galleryItem.appendChild(infoElement);
