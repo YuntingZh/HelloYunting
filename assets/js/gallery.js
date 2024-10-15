@@ -2,6 +2,17 @@ const gallery = document.querySelector('.gallery');
 
 // Define image data with tags
 const images = [
+    { src: '../assets/images/projects/art_viusal/digitalsketch_dancer.PNG', description: 'Digital Sketch Dancer', tags: ['Digital 2D'] },
+    { src: '../assets/images/projects/art_viusal/digitalsketch_watercolor_freso.PNG', description: 'Digital Sketch Watercolor Fresco', tags: ['Digital 2D'] },
+    { src: '../assets/images/projects/art_viusal/digitalsketch_young_girl.PNG', description: 'Digital Sketch Young Girl', tags: ['Digital 2D'] },
+    { src: '../assets/images/projects/art_viusal/sketch_bag_not_original.jpeg', description: 'Sketch Bag Not Original', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_bags.jpeg', description: 'Sketch Bags', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_anime.jpeg', description: 'Watercolor Sketch Anime', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_cats.jpeg', description: 'Watercolor Sketch Cats', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_char.jpeg', description: 'Watercolor Sketch Character', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_dragon.JPG', description: 'Watercolor Sketch Dragon', tags: ['Sketch'] },
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_dragon.JPG', description: 'Watercolor Sketch Dragon', tags: ['Sketch'] },  
+    { src: '../assets/images/projects/art_viusal/sketch_watercolor_vessel.jpeg', description: 'Watercolor Sketch Vessel', tags: ['Sketch'] },  
     { src: '../assets/images/projects/art_viusal/3D_Art_Competition.png', description: '3D Art Competition', tags: ['3D'] },
     { src: '../assets/images/projects/art_viusal/AI_stable_diffusion.png', description: 'AI Stable Diffusion', tags: ['AI Work'] },
     { src: '../assets/images/projects/art_viusal/blender_animation.png', description: 'Blender Animation', tags: ['3D'] },
@@ -49,16 +60,7 @@ const images = [
     { src: '../assets/images/projects/art_viusal/unreal_ocean.gif', description: 'Unreal Ocean GIF', tags: ['3D', 'GIF'] },
     { src: '../assets/images/projects/art_viusal/unreal_ocean2.gif', description: 'Unreal Ocean 2 GIF', tags: ['3D', 'GIF'] },
     { src: '../assets/images/projects/art_viusal/unreal_render.png', description: 'Unreal Render', tags: ['3D'] },
-    { src: '../assets/images/projects/art_viusal/digitalsketch_dancer.PNG', description: 'Digital Sketch Dancer', tags: ['Digital 2D'] },
-    { src: '../assets/images/projects/art_viusal/digitalsketch_watercolor_freso.PNG', description: 'Digital Sketch Watercolor Fresco', tags: ['Digital 2D'] },
-    { src: '../assets/images/projects/art_viusal/digitalsketch_young_girl.PNG', description: 'Digital Sketch Young Girl', tags: ['Digital 2D'] },
-    { src: '../assets/images/projects/art_viusal/sketch_bag_not_original.jpeg', description: 'Sketch Bag Not Original', tags: ['Sketch'] },
-    { src: '../assets/images/projects/art_viusal/sketch_bags.jpeg', description: 'Sketch Bags', tags: ['Sketch'] },
-    { src: '../assets/images/projects/art_viusal/sketch_watercolor_anime.jpeg', description: 'Watercolor Sketch Anime', tags: ['Sketch'] },
-    { src: '../assets/images/projects/art_viusal/sketch_watercolor_cats.jpeg', description: 'Watercolor Sketch Cats', tags: ['Sketch'] },
-    { src: '../assets/images/projects/art_viusal/sketch_watercolor_char.jpeg', description: 'Watercolor Sketch Character', tags: ['Sketch'] },
-    { src: '../assets/images/projects/art_viusal/sketch_watercolor_dragon.JPG', description: 'Watercolor Sketch Dragon', tags: ['Sketch'] },
-    { src: '../assets/images/projects/art_viusal/sketch_watercolor_vessel.jpeg', description: 'Watercolor Sketch Vessel', tags: ['Sketch'] }
+    { src: '../assets/images/projects/art_viusal/AI_Booket_design.png', description: 'A book design about stable diffusion', tags: ['AI Work'] }
 
 ];
 

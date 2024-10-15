@@ -1389,6 +1389,7 @@ main {
 .filter-btn {
     padding: 10px 20px;
     border: 1px solid var(--light-gray);
+    border-radius: 15px;
     background-color: var(--eerie-black-1);
     color: var(--white-2);
     cursor: pointer;
