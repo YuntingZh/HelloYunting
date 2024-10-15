@@ -10,7 +10,6 @@ const images = [
     { src: '../assets/images/projects/art_viusal/sketch_watercolor_anime.jpeg', description: 'Watercolor Sketch Anime', tags: ['Sketch'] },
     { src: '../assets/images/projects/art_viusal/sketch_watercolor_cats.jpeg', description: 'Watercolor Sketch Cats', tags: ['Sketch'] },
     { src: '../assets/images/projects/art_viusal/sketch_watercolor_char.jpeg', description: 'Watercolor Sketch Character', tags: ['Sketch'] },
-    { src: '../assets/images/projects/art_viusal/sketch_watercolor_dragon.JPG', description: 'Watercolor Sketch Dragon', tags: ['Sketch'] },
     { src: '../assets/images/projects/art_viusal/sketch_watercolor_dragon.JPG', description: 'Watercolor Sketch Dragon', tags: ['Sketch'] },  
     { src: '../assets/images/projects/art_viusal/sketch_watercolor_vessel.jpeg', description: 'Watercolor Sketch Vessel', tags: ['Sketch'] },  
     { src: '../assets/images/projects/art_viusal/3D_Art_Competition.png', description: '3D Art Competition', tags: ['3D'] },
