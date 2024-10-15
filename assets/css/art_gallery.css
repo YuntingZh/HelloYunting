@@ -1393,3 +1393,26 @@ main {
 .gallery-item:hover .info {
     opacity: 1;
 }
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--light-gray);
+    background-color: var(--eerie-black-1);
+    color: var(--white-2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--neon-pink-highlight);
+}
+
+.filter-btn.active {
+    background-color: var(--fluorescent-pink);
+}
