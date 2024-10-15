@@ -1187,6 +1187,13 @@ main {
 
 
 /* shared style */
+.spacer {
+    height: 30px; /* Adjust the height to control the space */
+}
+.small-spacer {
+    height: 15px; /* Adjust the height to control the space */
+}
+
 .horizontal-container {
     display: flex;
     justify-content: space-between;
