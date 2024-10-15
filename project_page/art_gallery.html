@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="../assets/css/art_gallery.css">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <main>
+        <!--- #SIDEBAR-->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="../assets/images/AboutMe/my_headshot_small.png" alt="Yunting Zhao" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Yunting Zhao">Yunting Zhao</h1>
+                    <p class="title">Designer | Developer</p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span><ion-icon
+                        name="chevron-down"></ion-icon></button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:cucyzx@gmail.com" class="contact-link">cucyzx@gmail.com</a>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Berkeley, CA</address>
+                        </div>
+                    </li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/yuntingzhao/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://yuntingzhao.com/" class="social-link"><ion-icon name="home-outline"></ion-icon></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/yunlove3d/?hl=en" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </aside>
+        <div class="main-content">
+            <!--- #NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>Art Gallery</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" onclick="window.location.href='../visual_designer_home.html';">Back
+                            to
+                            Home</button>
+                    </li>
+                </ul>
+            </nav>
+            <article class="ar_developer active" data-page="ar_developer">
+                <header>
+                    <h2 class="h2 article-title">Art Gallery</h2>
+                </header>
+
+                <!-- This is the part to put in content details -->
+
+                <div class="gallery">
+                    <!-- The images will be loaded dynamically here -->
+                </div>
+            
+                
+                    <section id="reflection" class="overview-section">
+                        <h2 id="design-context" class="section-title">Reflection</h2>
+                        <h3 class="highlight-title center">What I did & What I learned</h3>
+                        <p class="project-basic-text">Throughout my work on the SunWATER+ project, I gained invaluable
+                            experience in designing user-centric interfaces for complex systems. Collaborating with
+                            interdisciplinary teams of engineers and researchers taught me how to balance technical
+                            requirements with intuitive design.
+
+                            Additionally, I deepened my understanding of sustainable energy solutions, particularly
+                            solar-powered greywater reuse, and learned how to integrate technologies like AI and
+                            nanotechnology into scalable systems. This project enhanced my ability to approach design
+                            challenges holistically, ensuring the user interface supports both functionality and ease of
+                            use.</p>
+                        <div class="horizontal-container">
+                            <div class="tri-image-container">
+                                <img src="../assets/images/projects/NDA/SWP_colorPalette.png"
+                                    alt="Color-Coded Water Status" class="full-image">
+                                <p class="project-small-text">
+                                    <strong>Color-Coded System for Water Status</strong>
+                                </p>
+                                <!-- Hidden popup content for "what I did" -->
+                                <div class="popup-content">
+
+                                    <p>📑</p>
+                                    <p class="highlight-title"><strong>What I Learned</strong></p>
+                                    <p>I realized the importance of
+                                        designing for clarity and speed, especially when users need to act quickly. A
+                                        simple
+                                        visual cue can help users understand critical information without needing to
+                                        dive
+                                        into
+                                        data details, making the system more intuitive and actionable.</p>
+                                    <p>✍️</p>
+                                    <p class="highlight-title"><strong>What I did</strong></p>
+                                    <p>I developed a color-coded system using three distinct colors (yellow, green, blue) to represent water quality status—'Attention Needed,' 'Irrigation Safe,' and 'Indoor Safe'—making it easily recognizable for users.</p>
+                                </div>
+                            </div>
+                            <div class="tri-image-container">
+                                <img src="../assets/images/projects/NDA/SWP_Wedge.png" alt="Pop-Up Filter Notifications"
+                                    class="full-image">
+                                <p class="project-small-text">
+                                    <strong>Design for Mobile Accessibility</strong>
+                                </p>
+                                <!-- Hidden popup content for "what I did" -->
+                                <div class="popup-content">
+
+                                    <p>📑</p>
+                                    <p class="highlight-title"><strong>What I Learned</strong></p>
+                                    <p>I learned that mobile-first design
+                                        is essential for busy building managers or homeowners. By reducing the number of
+                                        steps a
+                                        user has to take to get essential information, I made the app more user-friendly
+                                        and
+                                        effective for real-time monitoring.</p>
+                                    <p>✍️</p>
+                                    <p class="highlight-title"><strong>What I did</strong></p>
+                                    <p>To make the system more accessible to mobile users, I
+                                        incorporated pop-up notifications when filters needed to be changed.
+                                        Additionally, I
+                                        designed a small status wedge for the phone's lock screen to continuously
+                                        display
+                                        water
+                                        status without requiring users to open the app.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="horizontal-container">
+                            <div class="tri-image-container">
+                                <img src="../assets/images/projects/NDA/SWP_action.png" alt="Real-Time Visual Feedback"
+                                    class="full-image">
+                                <p class="project-small-text">
+                                    <strong>Real-Time Alerts for Actionable Insights</strong>
+                                </p>
+                                <!-- Hidden popup content for "what I did" -->
+                                <div class="popup-content">
+
+                                    <p>📑</p>
+                                    <p class="highlight-title"><strong>What I Learned</strong></p>
+                                    <p>I discovered that providing not only data but also
+                                        actionable insights is critical. Users don’t just need to know that something is
+                                        wrong—they need to know what action to take immediately. This approach greatly
+                                        improves the usability of the system.</p>
+                                    <p>✍️</p>
+                                    <p class="highlight-title"><strong>What I did</strong></p>
+                                    <p>I designed a system that not only alerts users when
+                                        issues occur, but also provides clear, actionable steps they can take to resolve
+                                        problems in real-time.</p>
+                                </div>
+                            </div>
+                            <div class="tri-image-container">
+                                <img src="../assets/images/projects/NDA/SWP_mini.png"
+                                    alt="Responsive and Scalable Design" class="full-image">
+                                <p class="project-small-text">
+                                    <strong>Minimizing Cognitive Load through Simple Visuals</strong> <br>
+                                </p>
+                                <!-- Hidden popup content for "what I did" -->
+                                <div class="popup-content">
+                                    <p>📑</p>
+                                    <p class="highlight-title"><strong>What I Learned</strong></p>
+                                    <p>I learned the
+                                        importance of minimizing cognitive load, especially in systems that deal with
+                                        complex,
+                                        technical data. Prioritizing information and guiding users toward what matters
+                                        most
+                                        ensures the system remains efficient without sacrificing clarity.</p>
+                                    <p>✍️</p>
+                                    <p class="highlight-title"><strong>What I did</strong></p>
+                                    <p>To ensure users wouldn’t be overwhelmed, I focused on
+                                        creating
+                                        simple, uncluttered dashboards with only the most important metrics prominently
+                                        displayed.
+                                        Advanced data is tucked into secondary screens for more detailed exploration
+                                        when
+                                        necessary.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+
+
+
+
+
+
+            </article>
+        </div>
+    </main>
+    <script src="../assets/js/gallery.js"></script>
+
+</body>
+
+</html>

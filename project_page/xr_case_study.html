@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XR</title>
+    <link rel="shortcut icon" href="../assets/images/AboutMe/Website_icon_transparent.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!--- #SIDEBAR-->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="../assets/images/AboutMe/my_headshot_small.png" alt="Yunting Zhao" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Yunting Zhao">Yunting Zhao</h1>
+                    <p class="title">Designer | Developer</p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span><ion-icon
+                        name="chevron-down"></ion-icon></button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="contacts-list">
+                    <ul class="progress-list">
+                        <li class="progress-item" data-section="#puzzle-now">
+                            <a href="#puzzle-now" class="toc-link">MR - Puzzle Now</a>
+                        </li>
+                        <li class="progress-item" data-section="#boba-making">
+                            <a href="#boba-making" class="toc-link">MR - Boba Making</a>
+                        </li>
+                        <li class="progress-item" data-section="#mr-fossil">
+                            <a href="#mr-fossil" class="toc-link">MR - Mr. Fossil</a>
+                        </li>
+                        <li class="progress-item" data-section="#ophthalmoscopy-simulator">
+                            <a href="#ophthalmoscopy-simulator" class="toc-link">AR + VR - Ophthalmoscopy Simulator</a>
+                        </li>
+                        <li class="progress-item" data-section="#vr-horror-movie">
+                            <a href="#vr-horror-movie" class="toc-link">VR - Horror Movie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </aside>
+        <div class="main-content">
+            <!--- #NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>XR Case Study</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" onclick="window.location.href='../visual_designer_home.html';">Back
+                            to
+                            Home</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <article class="ar_developer active" data-page="ar_developer">
+                <header>
+                    <h2 class="h2 article-title">XR Case Study</h2>
+                </header>
+                <!-- Project Sections for Experience Designer Projects -->
+                <section class="project-text" id ="puzzle-now">
+                    <h3 class="h3-title">Puzzle Now - Apple Vision Pro Puzzle Game</h3>
+                    <p>
+                        This project was an extension of a hackathon, where I worked in a team of three to create a fun puzzle game for 
+                        the Apple Vision Pro upon its release. 'Puzzle Now' offers an immersive puzzle experience, allowing users to 
+                        interact with puzzle pieces in a spatial environment. With varying difficulty levels and automatic clustering 
+                        of pieces, the game provides both challenge and entertainment, enhanced by interactive sound and feedback. 
+                        Now available on the Apple Store.
+                    </p>
+                    <p><strong>Key Technologies</strong>: Apple Vision Pro, SwiftUI, Spatial Interaction</p>
+                    <p><strong>Role</strong>: Game Designer</p>
+                    <div class="project-image-grid">
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/XR/PuzzleNow_app.png" alt="Puzzle Now App" class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Available in Apple Store</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/XR/PuzzleNow_demo.gif" alt="Puzzle Now Demo" class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Demo in Action</p>
+                        </div>
+                    </div>
+                </section>
+                
+                    <section class="project-text" id="boba-making">
+                        <h3 class="h3-title">Mix Reality - Boba Making Experience</h3>
+                        <p>
+                            During an exciting hackathon at Stanford, my team created a mixed reality experience focused
+                            on
+                            making boba tea. Using Unity and the Quest 3, we allowed users to create their digital twin
+                            of a
+                            boba cup, with the recipe adjusting based on the cup's volume. This project brought together
+                            interactivity, creativity, and real-time adjustments.
+                        </p>
+                        <p><strong>Key Technologies</strong>: Unity, Quest 3, Mixed Reality</p>
+                        <p><strong>Role</strong>: Developer and Designer</p>
+                        <div class="project-image-grid">
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/Innovative_design/MR_boba_demo.gif"
+                                    alt="Project Image" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">MR boba demo</p>
+                            </div>
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/Innovative_design/MR_boba_testing.gif"
+                                    alt="Project Image" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">Testing on site</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="project-text" id = "mr-fossil">
+                        <h3 class="h3-title">Mr. Fossil</h3>
+                        <p>
+                            "Mr. Fossil" is an MR-based educational experience designed to teach children about
+                            paleontology
+                            in an engaging and interactive way. Utilizing MR technology, users can place and explore 3D
+                            fossil models in their real-world environment, learn fun facts, and even interact with
+                            animated
+                            dinosaurs. The app encourages a hands-on approach to learning, making the experience both
+                            educational and entertaining. This project showcases my skills in creating interactive MR
+                            content with a focus on education and user engagement.
+                        </p>
+                        <p><strong>Key Technologies</strong>: Unity, 3D Modeling, Animation</p>
+                        <div class="project-image-grid">
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/XR/mrfossil_intro.gif" alt="Project Image"
+                                    class="signlepage-project-image">
+                                <p class="signlepage-project-caption">Working process</p>
+                            </div>
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/XR/mrfossil_demo.gif" alt="Project Image"
+                                    class="signlepage-project-image">
+                                <p class="signlepage-project-caption">Demo</p>
+                            </div>
+                        </div>
+                    </section>
+          
+                    <section class="project-text" id = "ophthalmoscopy-simulator">
+                        <h3 class="h3-title">XR Ophthalmoscopy Simulator - AR + VR Solution for Education</h3>
+                        <p>
+                            The XR Ophthalmoscopy Simulator is part of a research collaboration with the IDSC and Bascom Palmer Eye Institute. 
+                            This VR tool is designed to help medical students practice eye examinations, offering an immersive, risk-free learning 
+                            environment with realistic 3D eye models and varied scenarios to enhance diagnostic skills.
+                        </p>
+                        <p><strong>Key Technologies</strong>: AR, VR, 3D Modeling, Medical Simulation</p>
+                        <p><strong>Role</strong>: XR Developer, Medical Simulation Designer</p>
+                        <div class="project-image-grid">
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/Innovative_design/VR_O_demo.gif" alt="XR Ophthalmoscopy Demo" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">XR Ophthalmoscopy Demo in Action</p>
+                            </div>
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/Innovative_design/bason-palmer-eye-institute.png" alt="Bascom Palmer Eye Institute" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">In Collaboration with Bascom Palmer Eye Institute</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="project-text" id = "vr-horror-movie">
+                        <h3 class="h3-title">Content Creator</h3>
+                        <p>
+                            Additionally, I create multimeida vidoes, I like exploring immersive storytelling techniques. One of my projects was a VR horror movie created with friends during the pandemic as part of a storytelling class. The goal was to evoke discomfort, and we collaborated on filming and editing to achieve this unsettling experience. Beyond these, I continue working as a content creator, producing and editing various forms of digital media to connect with diverse audiences.
+                        </p>
+                    
+                        <div class="project-image-grid">
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/cine/VR_horror_movie_art.png" alt="VR Horror Movie Art" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">Concept art designed by me</p>
+                            </div>
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/cine/VR_horror_movie_bts.png" alt="VR Horror Movie BTS" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">Shooting on set</p>
+                            </div>
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/cine/VR_horror_movie_make_up.png" alt="VR Horror Movie Makeup" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">Special effect Makeup</p>
+                            </div>
+                            <div class="signlepage-project-image-wrapper">
+                                <img src="../assets/images/projects/cine/VR_horror_movie.gif" alt="VR Horror Movie Scene" class="signlepage-project-image">
+                                <p class="signlepage-project-caption">Some clips from the final VR horror movie</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+             
+
+
+            </article>
+        </div>
+    </main>
+</body>
+<script src="../assets/js/toc.js"></script>
+   
+
+</html>
