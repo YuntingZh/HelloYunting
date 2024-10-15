@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiftPixy Lab - projects</title>
+    <link rel="stylesheet" href="../assets/css/shiftpixy.css">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <main>
+        <!--- #SIDEBAR-->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="../assets/images/AboutMe/my_headshot_small.png" alt="Yunting Zhao" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Yunting Zhao">Yunting Zhao</h1>
+                    <p class="title">Designer | Developer</p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span><ion-icon
+                        name="chevron-down"></ion-icon></button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="contacts-list">
+                    <ul class="progress-list">
+                        <li class="progress-item" data-section="#cluckin-lucky">
+                            <a href="#cluckin-lucky" class="toc-link">Cluckin Lucky</a>
+                        </li>
+                        <li class="progress-item" data-section="#motion-tracking-video">
+                            <a href="#motion-tracking-video" class="toc-link">3D Motion Tracking Video</a>
+                        </li>
+                        <li class="progress-item" data-section="#other-projects">
+                            <a href="#other-projects" class="toc-link">Other Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+        <div class="main-content">
+            <!--- #NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>ShiftPixy Lab</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" onclick="window.location.href='../visual_designer_home.html';">Back
+                            to
+                            Home</button>
+                    </li>
+                </ul>
+            </nav>
+            <article class="ar_developer active" data-page="ar_developer">
+                <header>
+                    <h2 class="h2 article-title">ShiftPixy Lab</h2>
+                </header>
+
+                <section class="hero-image-wrapper">
+                    <img src="../assets/images/projects/ShiftPixy/SPL_CL_op.png" alt="Cluckin Lucky Background"
+                        class="hero-image">
+                </section>
+
+
+
+                <section id="cluckin-lucky" class="overview-section animated-section">
+
+                    <h2 class="section-title">Cluckin Lucky</h2>
+                    <h3 class="highlight-title center">Endless Runner Game for Brand Engagement</h3>
+
+                    <!-- Project Overview -->
+                    <p class="project-basic-text">
+                        <strong>What I did:</strong> Game Developing, User Experience Design<br>
+                        <strong>Tools Used:</strong> Unity, Blender
+                    </p>
+
+                    <p class="project-basic-text">
+                        In 2022, I joined ShiftPixy Labs, where the team was developing a digital food brand. One of the
+                        main projects I worked on was Cluckin Lucky, a game featuring a chicken wearing a yellow
+                        raincoat, designed as the brand’s mascot. As the game developer and user experience designer, I
+                        collaborated with the team to build the Cluckin Lucky endless runner game.
+                    </p>
+
+                    <!-- Placeholder for GIF and image -->
+                    <div class="project-image-grid">
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/op_clukin_luck_animation.gif"
+                                alt="Game demo GIF" class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Cluckin Lucky game promo video</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_food.png" alt="Food truck + food item"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Food truck + food item</p>
+                        </div>
+                    </div>
+
+                    <div class="spacer"></div>
+                    <!-- Core Game Design -->
+                    <h2 class="sub-section-title">Core Game Design</h2>
+                    <p class="project-basic-text">
+                        The game is embedded within the food ordering app, designed to entertain users while they wait
+                        for their order to be delivered. Players can collect points during the game, which can be
+                        redeemed for discounts on future orders. Our goal was to create a fun and immersive experience
+                        that would enhance customer engagement with the restaurant brand, connecting entertainment with
+                        dining. The challenge was integrating the brand’s identity into a game that was not only
+                        entertaining but also provided practical rewards in the form of food discounts, encouraging
+                        repeat visits.
+                    </p>
+
+                    <!-- Placeholder for additional GIF and brand screenshot -->
+                    <div class="project-image-grid">
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_game_prototype.gif" alt="Brand screenshot"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Game Prototype</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/op_clukin_luck_game.gif" alt="Game demo GIF"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Game Demo</p>
+                        </div>
+
+                    </div>
+                    <div class="spacer"></div>
+
+                    <!-- Design Approach -->
+                    <h2 class="section-title">Design Approach</h2>
+                    <div class="spacer"></div>
+
+                    <!-- Obstacle Generation -->
+                    <h3 class="highlight-title">Obstacle Generation</h3>
+                    <div class="small-spacer"></div>
+
+                    <p class="project-basic-text">
+                        One of my key contributions was refining the system for generating obstacles in the endless
+                        runner. Initially, the game used a random placement for obstacles, but during internal testing,
+                        I found that this led to either overly sparse or clustered placements. This affected gameplay
+                        pacing and balance, making it unpredictable and frustrating for players.
+                    </p>
+                    \ <div class="project-image-grid">
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_debug1.png" alt="Game screenshot"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Game Debugging</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_debug2.png" alt="Game screenshot"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Track Segment Logic with Obstacles</p>
+                        </div>
+                    </div>
+                    <p class="project-basic-text"> TTo solve this, I introduced a dynamic difficulty adjustment system
+                        based on the player's speed and progress. This system created a more structured difficulty curve
+                        that scaled smoothly as players advanced, ensuring a more engaging experience.
+                    </p>
+
+
+                    <div class="horizontal-container">
+                        <!-- Explanation for Initial Random System -->
+                        <div class="highlight-item">
+                            <h3 class="sub-highlight-title center">Initial Random System</h3>
+                            <p class="project-small-text center">
+                                In the original system, obstacles were placed entirely at random. Players often
+                                encountered obstacles that were either too close together or too far apart.
+                            </p>
+                        </div>
+                        <!-- Image for Initial Random System -->
+                        <div class="highlight-item">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_obstacle_before.png"
+                                alt="Initial random obstacle system">
+                        </div>
+                    </div>
+
+                    <div class="horizontal-container">
+                        <!-- Image for Redesigned Grid-based System -->
+                        <div class="highlight-item">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_obstacle_redesign.png"
+                                alt="Redesigned Grid-based System">
+                        </div>
+
+                        <!-- Explanation for Redesigned Grid-based System -->
+                        <div class="highlight-item">
+                            <h3 class="sub-highlight-title center">Redesigned Grid-based System</h3>
+
+                            <p class="project-small-text center">
+
+                                To address this issues of randomness, I redesigned the system by implementing a
+                                grid-based layout. This allowed me to organize obstacle placement by size and type,
+                                ensuring that the distribution was more proportional and balanced.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-container">
+                        <!-- Explanation for Final Optimized System -->
+                        <div class="highlight-item">
+                            <h3 class="sub-highlight-title center">Final Optimized System</h3>
+                            <p class="project-small-text center">
+                                I also used waypoints to guide the player's path, planning safe zones to avoid
+                                overwhelming the player with obstacles. This final design created a more fun and
+                                rewarding experience for players as they progressed through the game.
+                            </p>
+                        </div>
+                        <!-- Image for Final Optimized System -->
+                        <div class="highlight-item">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_obstacle_after.png"
+                                alt="Final Optimized System">
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Visual Design -->
+                    <h3 class="highlight-title">Visual Design</h3>
+                    <div class="small-spacer"></div>
+
+                    <p class="project-basic-text">
+                        The visual design was crafted to reflect the playful and approachable nature of the brand. I
+                        collaborated closely with the art team to ensure that the chicken character and the overall
+                        environment aligned with the brand’s identity. Using Blender and Maya, we developed a vibrant,
+                        cartoon-like world featuring playful elements such as oversized food items and rain-themed
+                        visuals that matched the character's yellow raincoat. The colorful design was intended to
+                        quickly capture the user's attention, reinforcing the brand’s fun and family-friendly image.
+                    </p>
+                    <p class="project-basic-text">
+                        In the game, I was responsible for designing the visual effects when the main character consumed
+                        special bonus items and gained invincibility. I created a fiery effect around the character
+                        using shader graphics and the particle system, which generated a trailing aura to represent the
+                        character’s newfound power. By carefully adjusting the particle flow and shader parameters, I
+                        was able to strike a balance, making the power-up both visually exciting and consistent with the
+                        playful, vibrant style of the game.
+                    </p>
+                    <div class="spacer"></div>
+
+                    <div class="horizontal-container">
+                        <!-- Explanation for Initial Random System -->
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_characters.png" alt="Game screenshot"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Character design</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/SPL_VFX.png" alt="Game screenshot"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">VFX - trailing aura</p>
+                        </div>
+
+
+                    </div>
+                    <div class="small-spacer"></div>
+
+                    <p class="project-basic-text">
+                        More images and content will be released on the website in late 2025.
+                    </p>
+                    <a href="https://cluckinlucky.com" class="project-link">View more here</a>
+                </section>
+
+                <section id="motion-tracking-video">
+                    <h3 class="section-title">Motion Tracking Video</h3>
+                    <h3 class="highlight-title center">Advertising Digital Food Ordering</h3>
+                    <div class="small-spacer"></div>
+
+                    <p class="project-basic-text">Besides game development, I was also involved in creating a series of
+                        motion-based animations
+                        that brought the ShiftPixy brand to life by seamlessly integrating animated characters into
+                        real-world environments. My focus was on enhancing brand storytelling through engaging and
+                        interactive visual content that captivated the audience. I created 2D animation for the wall
+                        texture projection.
+                    </p>
+                    <div class="project-image-grid">
+
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/wave_draft.gif" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Wave Draft</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/wave_only.gif" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Wave Finish</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/2d-animation.gif" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Animated Character</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/2d_all.gif" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Character & Wave</p>
+                        </div>
+
+                    </div>
+                    <p class="project-basic-text">
+                        I collaborated closely with the creative lab and shooting team, using Blender to animate
+                        character movements and employing 3D motion tracking to align digital assets accurately
+                        within
+                        the physical setting. Additionally, I utilized After Effects for post-production to remove
+                        the
+                        trackers, ensuring a polished final look. This combination of 2D animation, 3D motion
+                        tracking,
+                        and refined visual adjustments helped create an immersive and cohesive brand experience,
+                        bridging digital storytelling with physical spaces in a unique way.</p>
+                    <div class="small-spacer"></div>
+
+                    <div class="project-image-grid">
+
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/3D_motion_tracking.png" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption"> Character - Dude Rudy</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/3D_tracking_1.png" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">3D motion tracking process</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/3D_tracking_2.png" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">2D animation</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/3D_tracking_anime.gif" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Clip from final video.</p>
+                        </div>
+
+                    </div>
+                    <div class="spacer"></div>
+
+                    <p class="project-basic-text">One challenge we faced was ensuring the characters' facial expressions
+                        were expressive enough. To speed up the workflow, we introduced face tracking, which I tested
+                        during the production of the Cluckin Lucky game. This added a humorous element to the video,
+                        which we showcased in a demonstration clip.</p>
+                    <div class="small-spacer"></div>
+
+                    <div class="project-image-grid">
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/shooting_team.png"
+                                alt="Character Face Tracking" class="signlepage-project-image">
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/rombo_face_tracking.gif"
+                                alt="Character Face Tracking" class="signlepage-project-image">
+                        </div>
+                    </div>
+                    <div class="spacer"></div>
+                    <!-- Visual Design -->
+                    <h3 class="highlight-title">What I Learned</h3>
+                    <div class="small-spacer"></div>
+                    <div class="project-image-grid">
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/Animation_working_progress.png"
+                                alt="Project Image" class="signlepage-project-image">
+                            <p class="signlepage-project-caption">I created digital waffles</p>
+                        </div>
+                        <div class="signlepage-project-image-wrapper">
+                            <img src="../assets/images/projects/ShiftPixy/Digital_food.png" alt="Project Image"
+                                class="signlepage-project-image">
+                            <p class="signlepage-project-caption">Digitized food for an AR menu</p>
+                        </div>
+                    </div>
+                    <div class="small-spacer"></div>
+                    <p class="project-basic-text">
+                        This project allowed me to work closely with 3D artists, deepening my understanding of the core
+                        value of motion design and how to create expressive animations. I also experimented with
+                        creative techniques like 3D scanning to recreate details of food items, such as this burger.
+                        Additionally, I modeled and animated objects like a broken waffle, refining my
+                        3D modeling skills.</p>
+                    <div class="small-spacer"></div>
+                    <a href="https://youtu.be/Xwuk88JaI0U" class="project-link">View Video</a>
+
+                </section>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <section id="other-projects">
+                    <h3 class="section-title">Other Projects</h3>
+                    <h3 class="highlight-title center">Some other creative work</h3>
+                    <div class="spacer"></div>
+                    <div class="horizontal-container">
+                        <!-- Explanation for Initial Random System -->
+                        <div class="highlight-item">
+                            <h3 class="sub-highlight-title center">Character-Based AR Branding</h3>
+                            <p class="project-small-text center">
+                                I used Spark AR Studio to transform everyday workspaces into immersive AR
+                                environments. By using target tracking, I brought company mascots and characters to
+                                life,
+                                allowing them to interact with users whenever the camera detected specific images.
+                            </p>
+                        </div>
+                        <!-- Image for Initial Random System -->
+                        <div class="highlight-item">
+                            <div class="project-image-grid">
+
+                                <div class="signlepage-project-image-wrapper">
+                                    <img src="../assets/images/projects/ShiftPixy/AR_char1.gif" alt="Project Image"
+                                        class="signlepage-project-image">
+                                </div>
+                                <div class="signlepage-project-image-wrapper">
+                                    <img src="../assets/images/projects/ShiftPixy/AR_char2.gif" alt="Project Image"
+                                        class="signlepage-project-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-container">
+                        <!-- Image for Redesigned Grid-based System -->
+                        <div class="highlight-item">
+                            <div class="project-image-grid">
+
+                                <div class="signlepage-project-image-wrapper">
+                                    <img src="../assets/images/projects/ShiftPixy/AR_taco.gif" alt="Project Image"
+                                    class="signlepage-project-image">
+                                </div>
+                                <div class="signlepage-project-image-wrapper">
+                                    <img src="../assets/images/projects/ShiftPixy/tacos.png" alt="Project Image"
+                                        class="signlepage-project-image">
+                                </div>
+                            </div>
+                        </div>
+                   
+
+                        <!-- Explanation for Redesigned Grid-based System -->
+                        <div class="highlight-item">
+                            <h3 class="sub-highlight-title center">AR Menus</h3>
+
+                            <p class="project-small-text center">
+                                I created AR menus where users could interact with 3D-scanned food items.                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+            </article>
+        </div>
+    </main>
+    <script src="../assets/js/toc.js"></script>
+
+</body>
+<script>
+    let isContentAtTop = false; // Flag to track if the content has finished sliding up
+    const heroImage = document.querySelector('.hero-image');
+    const section = document.querySelector('.animated-section');
+    const mainContent = document.querySelector('.main-content'); // Main content container
+
+    const heroImageHeight = heroImage.offsetHeight; // Get the height of the hero image
+
+    // Scroll handler
+    window.onscroll = function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Calculate how much the user has scrolled in relation to the hero image
+        let scrollFraction = Math.min(scrollTop / heroImageHeight, 1); // Cap at 1 (100%)
+        let translateY = (- scrollFraction) * 250; // Calculate slide up position
+
+        // Slide the content based on scroll position
+        section.style.transform = `translateY(${translateY}px)`;
+
+        // Fade out the hero image based on scroll position
+        heroImage.style.opacity = 1 - scrollFraction;
+
+        // Lock the scroll if the user hasn't scrolled past the hero image height
+        if (scrollTop < heroImageHeight) {
+            isContentAtTop = false;
+        } else if (scrollTop >= heroImageHeight) {
+            isContentAtTop = true; // Mark content as being at the top
+        }
+    };
+
+
+</script>
+
+
+</html>
