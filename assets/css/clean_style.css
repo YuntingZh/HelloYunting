@@ -1099,7 +1099,7 @@ main {
     min-width: 0;
 }
 .project-card-important-ursa{
-    background: linear-gradient(135deg,     var(--fluorescent-pink), #53ff14);
+    background: linear-gradient(135deg,   #53ff14, var(--fluorescent-pink));
     border: 1px solid var(--jet);
     border-radius: 16px;
     padding: 1.5rem;
