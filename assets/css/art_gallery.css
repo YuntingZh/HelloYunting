@@ -1187,6 +1187,12 @@ main {
 
 
 /* shared style */
+.spacer {
+    height: 30px; /* Adjust the height to control the space */
+}
+.small-spacer {
+    height: 15px; /* Adjust the height to control the space */
+}
 .horizontal-container {
     display: flex;
     justify-content: space-between;
@@ -1237,7 +1243,7 @@ main {
 /* this is the secondary title */
 .highlight-title {
     font-size: 1.3em;
-    color: #FADBA0;
+    color: var(--neon-pink-highlight);
     margin-bottom: 10px;
 }
 .center{
@@ -1364,6 +1370,7 @@ main {
     break-inside: avoid;  /* Prevent the image from being split between columns */
     margin-bottom: 0;     /* Remove space between items */
     width: 100%;
+
 }
 
 .gallery-item img {

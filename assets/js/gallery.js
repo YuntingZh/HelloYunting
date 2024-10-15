@@ -91,12 +91,25 @@ function loadImages(filterTag) {
 
 // Add event listeners for filter buttons
 const filterButtons = document.querySelectorAll('.filter-btn');
+
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const filterTag = button.dataset.filter;
+
+        // Remove 'active' class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
+
+        // Load images based on selected filter
         loadImages(filterTag);
     });
 });
 
 // Load all images on initial load
 loadImages('All');
+
+// Set the 'All' button as active initially
+document.querySelector('.filter-btn[data-filter="All"]').classList.add('active');
+
